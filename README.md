@@ -207,6 +207,10 @@ bash preprocessing.sh
 ```
 
 **Step 6: Removing point source from merged image**
+- Create a ```regionfiles``` folder to save region files. (Replace "/home/zareef/minihalo/data/a2256" with your data path. )
+```
+mkdir -p /home/zareef/minihalo/data/a2256/regionfiles
+```
 - Open ```broad_thresh.img``` with ds9. This file should be located inside ```merged``` folder.\
 Replace the "/home/zareef/minihalo/data/a2256" path with yours.
 ```
@@ -221,6 +225,8 @@ A region file that contains all of the pointsources. These are typically foregro
 ```square.reg```:   
 This will eventually crop out all things outside of the region of interest. 
 
+Region file format:```Region : ciao```,```Coordinate System: wcs```\
+Save location: ```/home/zareef/minihalo/data/a2256/regionfiles```. Replace "/home/zareef/minihalo/data/a2256" with your data path. 
 
 
 Use the following command to run the Spectral Fitting (e.g. pre-fitting.sh file) in parallel

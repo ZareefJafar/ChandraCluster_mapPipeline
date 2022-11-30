@@ -146,16 +146,71 @@ Follow the SPEX installation guide from [here](https://spex-xray.github.io/spex-
 
 ### Generating maps.
 
-1. directory.py
+There are several python scripts (.py files). Running each script will generate a bash script (.sh file). 
+
+**Step 0: directory.py**
 
 - Open directory.py.
-- Edit and create following directories:
+- Edit follwing variables and create these directories manually:
 
 ```
 cluster = '"a2256"'                              #replace 'a2256' with your cluster name
 parentdir = '/home/zareef/minihalo/data/a2256'   #path where all the data will be stored   
-specfile_outputdir = parentdir + '/specfile_output'  # create specfile_output folder 
 ```
+- create additional directories inside data directory:
+```
+mkdir -p /home/zareef/minihalo/data/a2256/merged 
+```
+```
+mkdir -p /home/zareef/minihalo/data/a2256/specfile_output
+```
+
+**Step 1: Run PreProcessing_download_data.py**
+```
+python PreProcessing_download_data.py
+```
+```
+bash preprocessing.sh
+```
+
+**Step 2: Run PreProcessing_reprocess_data.py**
+```
+python PreProcessing_reprocess_data.py
+```
+```
+bash preprocessing.sh
+```
+
+**Step 3: Run PreProcessing_flare_filter.py**
+
+```
+python PreProcessing_flare_filter.py
+```
+```
+bash preprocessing.sh
+```
+
+**Step 4: Run PreProcessing_merge_data.py**
+```
+python PreProcessing_merge_data.py
+```
+```
+bash preprocessing.sh
+```
+
+**Step 5: Run PreProcessing_merge_data_flux.py**
+```
+python PreProcessing_merge_data_flux.py
+```
+```
+bash preprocessing.sh
+```
+
+**Step 6: Removing point source from merged image**
+
+
+
+
 
 Use the following command to run the Spectral Fitting (e.g. pre-fitting.sh file) in parallel
 ```

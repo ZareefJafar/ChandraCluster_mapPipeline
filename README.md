@@ -252,14 +252,32 @@ python PreProcessing_source_crop.py
 bash preprocessing.sh
 ```
 
-
-
-
-Use the following command to run the Spectral Fitting (e.g. pre-fitting.sh file) in parallel
+**Step 7: Run Preliminary_Products_contourbin.py**
 ```
-parallel -a ./pre-fitting.sh 
+python Preliminary_Products_contourbin.py
+```
+```
+bash preliminary_products.sh
 ```
 
-See the tutorial by [freeCodeCamp](https://www.freecodecamp.org/news/how-to-supercharge-your-bash-workflows-with-gnu-parallel-53aab0aea141/) for details.
+**Step 8: Converting region file coordinate system syntax**
+
+- Create ```/home/zareef/minihalo/data/a2256/merged/contbin_sn70_smooth100/outreg/sex``` directory. (Replace "/home/zareef/minihalo/data/a2256" with your data path.)
+```
+mkdir -p /home/zareef/minihalo/data/a2256/merged/contbin_sn70_smooth100/outreg/sex
+```
+- Convert region file coordinate system syntax
+
+```
+python RegCoordChange.py
+```
+```
+bash regcoordchange.sh
+```
+
+
+
+
+
 
 

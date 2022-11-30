@@ -218,7 +218,7 @@ A region file that contains all cluster emission (eg. a large circle around the 
 which will be removed and used for the deflaring/high energy rescaling). This would include areas such as the peak of cluster                             emission as these regions may contain high energy events you want to consider in this analysis.\
 broad_src_0.5-7-pointsources.reg:\
 A region file that contains all of the pointsources. These are typically foreground point sources one does not want                                       to consider when analyzing the cluster.\
-square.reg:\   
+square.reg:   
 This will eventually crop out all things outside of the region of interest. 
 
 

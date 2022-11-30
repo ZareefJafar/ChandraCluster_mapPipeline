@@ -226,7 +226,7 @@ A region file that contains all of the pointsources. These are typically foregro
 This will eventually crop out all things outside of the region of interest. 
 
 Region file format:```Region - ciao```,```Coordinate System - wcs```\
-Save location: ```/home/zareef/minihalo/data/a2256/regionfiles```. Replace "/home/zareef/minihalo/data/a2256" with your data path. 
+Save location: ```/home/zareef/minihalo/data/a2256/regionfiles```. Replace ```/home/zareef/minihalo/data/a2256``` with your data path. 
 
 
 - Again open ```broad_thresh.img``` with ds9. Open ```square.reg``` from ```regionfiles```. Save this as min_xy.reg. Region file format:```Region - ciao```,```Coordinate System - physical```\
@@ -262,7 +262,7 @@ bash preliminary_products.sh
 
 **Step 8: Converting region file coordinate system syntax**
 
-- Create ```/home/zareef/minihalo/data/a2256/merged/contbin_sn70_smooth100/outreg/sex``` directory. (Replace "/home/zareef/minihalo/data/a2256" with your data path.)
+- Create ```/home/zareef/minihalo/data/a2256/merged/contbin_sn70_smooth100/outreg/sex``` directory. (Replace ```/home/zareef/minihalo/data/a2256``` with your data path.)
 ```
 mkdir -p /home/zareef/minihalo/data/a2256/merged/contbin_sn70_smooth100/outreg/sex
 ```

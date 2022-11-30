@@ -229,6 +229,32 @@ Region file format:```Region - ciao```,```Coordinate System - wcs```\
 Save location: ```/home/zareef/minihalo/data/a2256/regionfiles```. Replace "/home/zareef/minihalo/data/a2256" with your data path. 
 
 
+- Again open ```broad_thresh.img``` with ds9. Open ```square.reg``` from ```regionfiles```. Save this as min_xy.reg. Region file format:```Region - ciao```,```Coordinate System - physical```\
+
+- Open the ```min_xy.reg``` using any text editor. You will see a region value which will look something like this:\
+```box(3871.7065,3939.0178,1733.5429,1135.1521,0)```. These values will be different for your cluster data.\
+x1 = 3871.7065\
+y1 = 1733.5429\
+x2 = 3939.0178\
+y2 = 1135.1521\
+Now do the following calculation,\
+minx = x1 -(y1/2)\
+miny = x2 -(y2/2)
+
+- Open ```directory.py``` and replace the value of minx and miny with our calculated value.
+
+- Run ```PreProcessing_source_crop.py```
+```
+python PreProcessing_source_crop.py
+```
+- Run generated ```preprocessing.sh```
+```
+bash preprocessing.sh
+```
+
+
+
+
 Use the following command to run the Spectral Fitting (e.g. pre-fitting.sh file) in parallel
 ```
 parallel -a ./pre-fitting.sh 

@@ -1,5 +1,7 @@
 Pipeline to create x-ray temeprature maps, pressure maps, surface brightness maps, and density maps of from [Chandra Data Archive](https://cda.harvard.edu/chaser/) of galaxy clusters.
 
+This pipeline is based on a [pipeline](https://github.com/jpbreuer/Chandra_pipeline) created by [Jean-Paul Breuer](http://jpbreuer.com/aboutme.html)
+
 
 
 ### Environment setup
@@ -141,9 +143,19 @@ Reference:
 
 Follow the SPEX installation guide from [here](https://spex-xray.github.io/spex-help/getstarted/install.html).
 
-### Using python scripts to generate maps.(Detailed instructions are coming soon...............)
 
-All the scripts that we will run are based on the [pipeline](https://github.com/jpbreuer/Chandra_pipeline) by [Jean-Paul Breuer](http://jpbreuer.com/aboutme.html)
+### Generating maps.
+
+1. directory.py
+
+- Open directory.py.
+- Edit and create following directories:
+
+```
+cluster = '"a2256"'                              #replace 'a2256' with your cluster name
+parentdir = '/home/zareef/minihalo/data/a2256'   #path where all the data will be stored   
+specfile_outputdir = parentdir + '/specfile_output'  # create specfile_output folder 
+```
 
 Use the following command to run the Spectral Fitting (e.g. pre-fitting.sh file) in parallel
 ```

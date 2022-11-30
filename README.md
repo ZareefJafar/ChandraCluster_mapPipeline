@@ -213,12 +213,12 @@ Replace the "/home/zareef/minihalo/data/a2256" path with yours.
 ds9 /home/zareef/minihalo/data/a2256/merged
 ```
 - We need to create 3 region files from ```broad_thresh.img``` file.\
-src_0.5-7-nps-noem.reg:\
+```src_0.5-7-nps-noem.reg```:\
 A region file that contains all cluster emission (eg. a large circle around the cluster that includes the extended emission, 
 which will be removed and used for the deflaring/high energy rescaling). This would include areas such as the peak of cluster                             emission as these regions may contain high energy events you want to consider in this analysis.\
-broad_src_0.5-7-pointsources.reg:\
+```broad_src_0.5-7-pointsources.reg```:\
 A region file that contains all of the pointsources. These are typically foreground point sources one does not want                                       to consider when analyzing the cluster.\
-square.reg:   
+```square.reg```:   
 This will eventually crop out all things outside of the region of interest. 
 
 

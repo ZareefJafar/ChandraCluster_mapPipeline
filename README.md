@@ -151,13 +151,13 @@ There are several python scripts (.py files). Running each script will generate 
 **Step 0: Creating directories**
 
 - Open directory.py.
-- Edit following variables and create these directories manually:
+- Edit following variables and create these directories manually. Replace the ```/home/zareef/minihalo/data/a2256``` path with yours.
 
 ```
 cluster = '"a2256"'                              #replace 'a2256' with your cluster name
 parentdir = '/home/zareef/minihalo/data/a2256'   #path where all the data will be stored   
 ```
-- create additional directories inside data directory (replace the /home/zareef/...... path with yours):
+- create additional directories inside data directory. Replace the ```/home/zareef/minihalo/data/a2256``` path with yours.
 ```
 mkdir -p /home/zareef/minihalo/data/a2256/merged 
 ```

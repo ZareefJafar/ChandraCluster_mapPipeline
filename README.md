@@ -277,6 +277,8 @@ bash regcoordchange.sh
 
 **Step 9: Pre fitting**
 
+Running this will take a long time depending on the data. Code for running it on server will come in the next update. Future works includes adding CPU/GPU parallel processing. 
+
 - Run Processing_pre_fitting.py
 ```
 python Processing_pre_fitting.py
@@ -289,6 +291,10 @@ heainit
 ```
 bash pre-fitting.sh
 ```
+- While running the ```pre-fittings you may see the following error messages related to ```OBS_ID and background files```. Ignore it right now. Fix is coming soon.
+
+![pre_fitting_error](images/pre_fitting_error.png)
+
 
 **Step 10: Processing_xspecfitting.py**
 - Run Processing_xspecfitting.py

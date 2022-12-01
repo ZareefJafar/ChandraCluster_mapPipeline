@@ -316,7 +316,7 @@ bash xspecfitting.sh
 
 ![xspecfitting_error_1](images/xspecfitting_error_1.png)
 
-- This particular error will run endlessly. Just press ```Ctrl+C``` to ignore and type ```exit``` to continue.   
+- This particular error will run endlessly. Just press ```Ctrl+C``` to stop it and type ```exit``` to continue.   
 
 ![xspecfitting_error_2](images/xspecfitting_error_2.png)
 

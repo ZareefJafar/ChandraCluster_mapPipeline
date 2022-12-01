@@ -312,6 +312,15 @@ cd /home/zareef/minihalo/data/a2256/specfile_output
 ```
 bash xspecfitting.sh
 ```
+- If you face following error just type ```exit``` and press Enter.
+
+![xspecfitting_error_1](images/xspecfitting_error_1.png)
+
+- This particular error will run endlessly. Just press ```Ctrl+C``` to ignore and continue.   
+
+![xspecfitting_error_2](images/xspecfitting_error_2.png)
+
+
 **Step 11: Run ParseOutput_xspec.py**
 ```
 python ParseOutput_xspec.py

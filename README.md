@@ -15,26 +15,26 @@ Follow the [Anaconda Installation page](https://docs.anaconda.com/anaconda/insta
 
 **2. Installing CIAO with conda.**
 
-Run the following command in the terminal to install ciao, caldb and some associated software in a conda environment named “ciao-4.14” or anything you like.
+- Run the following command in the terminal to install ciao, caldb and some associated software in a conda environment named “ciao-4.14” or anything you like.
 ```
 conda create -n ciao-4.14 -c https://cxc.cfa.harvard.edu/conda/ciao -c conda-forge ciao sherpa ds9 ciao-contrib caldb marx jupyter jupyterlab numpy matplotlib astropy scipy scikit-learn pandas seaborn
 ```
-CALDB, acis_bkgrnd and hrc_bkgrnd file download might fail because of  ```CondaHTTPError: HTTP 000 CONNECTION FAILED for url``` error or slow internet connection. If this happens remove caldb from CIAO installation command and follow the [Alternative download instructions](https://cxc.cfa.harvard.edu/ciao/threads/ciao_install_conda/index.html#alt_download)
+- CALDB, acis_bkgrnd and hrc_bkgrnd file download might fail because of  ```CondaHTTPError: HTTP 000 CONNECTION FAILED for url``` error or slow internet connection. If this happens remove caldb from CIAO installation command and follow the [Alternative download instructions](https://cxc.cfa.harvard.edu/ciao/threads/ciao_install_conda/index.html#alt_download)
 
-See the [Installing CIAO with conda page](https://cxc.cfa.harvard.edu/ciao/threads/ciao_install_conda/) to know more.
+- Reference: [Installing CIAO with conda page](https://cxc.cfa.harvard.edu/ciao/threads/ciao_install_conda/)
 
 
 **3. Download and install HEASOFT Software.**
 
--Go to the [HEASOFT installation page](https://heasarc.gsfc.nasa.gov/lheasoft/download.html)
+- Go to the [HEASOFT installation page](https://heasarc.gsfc.nasa.gov/lheasoft/download.html)
 
--Select "Source Code" and select "PC - Linux - Ubuntu" from checkbox in STEP 1.
+- Select "Source Code" and select "PC - Linux - Ubuntu" from checkbox in STEP 1.
 
--Select all in STEP 2 and click submit.
+- Select all in STEP 2 and click submit.
 
--unzip or extract the .tar.gz file and follow the [INSTALLATION](https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html) process to install HEASOFT.
+- unzip or extract the .tar.gz file and follow the [INSTALLATION](https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html) process to install HEASOFT.
 
--To make initialization easy I have created the following alias:
+- To make HEASOFT initialization easy I have created the following alias:
 
   In the terminal type the following:
   ```
@@ -46,10 +46,10 @@ See the [Installing CIAO with conda page](https://cxc.cfa.harvard.edu/ciao/threa
   alias heainit="export HEADAS=/path/to/your/installed/heasoft-6.30.1/(PLATFORM); . $HEADAS/headas-init.sh"
   ```
   To get the PLATFORM name:\
-  -Go inside the heasoft directory\
-  -Will see a folder named like "x86_64-pc-linux-gnu-libc2.31"\
-  -Copy the folder name\
-  -Replace PLATFORM placeholder with "x86_64-pc-linux-gnu-libc2.31"\
+      Go inside the heasoft directory\
+      Will see a folder named like "x86_64-pc-linux-gnu-libc2.31"\
+      Copy the folder name\
+      Replace PLATFORM placeholder with "x86_64-pc-linux-gnu-libc2.31"\
 
 
 
@@ -67,61 +67,61 @@ See the [Installing CIAO with conda page](https://cxc.cfa.harvard.edu/ciao/threa
 
 
 
-**4.Install CFITSIO**
+**4. Install CFITSIO**
 
--Download CFITSIO from [here](https://heasarc.gsfc.nasa.gov/docs/software/fitsio/fitsio.html)
+- Download CFITSIO from [here](https://heasarc.gsfc.nasa.gov/docs/software/fitsio/fitsio.html)
 
--Follow [this](https://www.gnu.org/software/gnuastro/manual/html_node/CFITSIO.html) instructions.
+- Follow [this](https://www.gnu.org/software/gnuastro/manual/html_node/CFITSIO.html) instructions.
 
 
 **5. Download and install Contour binning and accumulative smoothing software.**
 
--Open terminal and run the following:
+- Open terminal and run the following:
 ```
 git clone https://github.com/jeremysanders/contbin
 ```
--Go to the downloaded folder directory.
+- Go to the downloaded folder directory.
 ```
 cd ~/Downloads/contbin
 ```
--Build:
+- Build:
 ```
 make
 ```
--Copy the built program:
+- Copy the built program:
 ```
 sudo make install 
 ```
 
 
 **For server**\
--Open terminal and run the following:
+- Open terminal and run the following:
 ```
 git clone https://github.com/jeremysanders/contbin
 ```
 
--Create a ```local/bin``` directory in home directory:
+- Create a ```local/bin``` directory in home directory:
 ```
 mkdir -p local/bin
 ```
 
--Go to the ```contbin``` folder\
--Open MakeFile
+- Go to the ```contbin``` folder\
+- Open MakeFile
 ```
 nano MakeFile
 ```
--Set the ```bindir``` varaible path as the created local/bin path (e.g ```/home/usr/local/bin```)
+- Set the ```bindir``` varaible path as the created local/bin path (e.g ```/home/usr/local/bin```)
 
--Build:
+- Build:
 ```
 make
 ```
--Copy the built program:
+- Copy the built program:
 ```
 sudo make install 
 ```
 
-Learn more about [contbin](https://github.com/jeremysanders/contbin)
+To learn more about [contbin](https://github.com/jeremysanders/contbin)
 
 **6. Installing GNU parallel shell tool.(Not yet implemented)**
 
@@ -341,9 +341,9 @@ DONE!!!!!!!!
 
 ### Sample data, bash scripts and paper.
 
-All the generated data products including generated bash script and maps of Abell 2256 galaxy cluster using the pipeline: [drive](https://drive.google.com/drive/folders/15_onfxHnGdudMGuqgs3AC5pItJadYI8D?usp=share_link)
+- All the generated data products including generated bash script and maps of Abell 2256 galaxy cluster using the pipeline: [drive](https://drive.google.com/drive/folders/15_onfxHnGdudMGuqgs3AC5pItJadYI8D?usp=share_link)
 
-This [paper](https://arxiv.org/pdf/2005.10263.pdf) by J. P. Breuer discusses about image analysis of this cluster.
+- This [paper](https://arxiv.org/pdf/2005.10263.pdf) by J. P. Breuer discusses about image analysis of this cluster.
 
 
 

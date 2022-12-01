@@ -291,7 +291,7 @@ heainit
 ```
 bash pre-fitting.sh
 ```
-- While running the ```pre-fittings you may see the following error messages related to ```OBS_ID and background files```. Ignore it right now. Fix is coming soon.
+- While running ```pre-fitting``` you may see following error messages related to ```OBS_ID and background files```. Ignore it right now. Fix is coming soon.
 
 ![pre_fitting_error](images/pre_fitting_error.png)
 

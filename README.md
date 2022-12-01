@@ -339,11 +339,14 @@ python pipeline_maps.py
 
 DONE!!!!!!!!
 
-### Sample data and scripts after processing
+### Sample data, bash scripts and paper.
 
-Abell 2256 data product and bash sample bash files: [drive](https://drive.google.com/drive/folders/15_onfxHnGdudMGuqgs3AC5pItJadYI8D?usp=share_link)
+All the generated data products including generated bash script and maps of Abell 2256 galaxy cluster using the pipeline: [drive](https://drive.google.com/drive/folders/15_onfxHnGdudMGuqgs3AC5pItJadYI8D?usp=share_link)
 
-Paper: https://arxiv.org/pdf/2005.10263.pdf
+This [paper](https://arxiv.org/pdf/2005.10263.pdf) by J. P. Breuer discusses about image analysis of this cluster.
+
+
+
 
 
 

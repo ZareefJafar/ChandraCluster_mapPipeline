@@ -148,7 +148,7 @@ Follow the SPEX installation guide from [here](https://spex-xray.github.io/spex-
 
 There are several python scripts (.py files). Running each script will generate a bash script (.sh file). 
 
-**Step 0: directory.py**
+**Step 0: Creating directories**
 
 - Open directory.py.
 - Edit follwing variables and create these directories manually:

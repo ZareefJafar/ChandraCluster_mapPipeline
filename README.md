@@ -151,7 +151,7 @@ There are several python scripts (.py files). Running each script will generate 
 **Step 0: Creating directories**
 
 - Open directory.py.
-- Edit follwing variables and create these directories manually:
+- Edit following variables and create these directories manually:
 
 ```
 cluster = '"a2256"'                              #replace 'a2256' with your cluster name

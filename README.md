@@ -294,7 +294,7 @@ bash pre-fitting.sh
 - While running ```pre-fitting``` you may see following error messages related to ```OBS_ID and background files```. Ignore it right now. 
 ![pre_fitting_error](images/pre_fitting_error.png)
 
-- There is another issue ```specextract zero count error```. 
+- May encounter the following ```specextract zero count error```. 
 ![zerocount_error_specextract](images/zerocount_error_specextract_obs16129.png)
 
 will fix both in the next update.

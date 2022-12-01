@@ -275,7 +275,51 @@ python RegCoordChange.py
 bash regcoordchange.sh
 ```
 
+**Step 9: Pre fitting**
 
+- Run Processing_pre_fitting.py
+```
+python Processing_pre_fitting.py
+```
+- Initialize ```heasoft``` using alias we created previously
+```
+heainit
+```
+- Run generated ```pre-fitting.sh```
+```
+bash pre-fitting.sh
+```
+
+**Step 10: Processing_xspecfitting.py**
+- Run Processing_xspecfitting.py
+```
+python Processing_xspecfitting.py
+```
+- Go to ```specfile_output``` folder. You will find a file named```xspecfitting.sh```. Replace ```/home/zareef/minihalo/data/a2256/``` with your data path.
+```
+cd /home/zareef/minihalo/data/a2256/specfile_output
+```
+- run ```xspecfitting.sh```
+```
+bash xspecfitting.sh
+```
+**Step 11: Run ParseOutput_xspec.py**
+```
+python ParseOutput_xspec.py
+```
+**Step 12: Run cleanup.py**
+```
+python cleanup.py
+```
+**Step 13: Finale step, creating maps**
+- Open ```pipeline_maps.py``` using any text editor.
+- Edit the ```binmap``` variable and save.
+- Run ```pipeline_maps.py```
+```
+python pipeline_maps.py
+```
+
+DONE!!!!!!!!
 
 
 

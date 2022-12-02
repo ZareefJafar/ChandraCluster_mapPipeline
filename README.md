@@ -291,10 +291,10 @@ heainit
 ```
 bash pre-fitting.sh
 ```
-- While running ```pre-fitting``` you may see following error messages related to ```OBS_ID and background files```. Ignore it right now. 
+- While running ```pre-fitting``` you may see following Warnings related to ```OBS_ID and background files```. Ignore it.
 ![pre_fitting_error](images/pre_fitting_error.png)
 
-- May encounter the following ```specextract zero count error```. 
+- May encounter ```specextract zero count error```. Ignore it for now.
 ![zerocount_error_specextract](images/zerocount_error_specextract_obs16129.png)
 
 will fix both in the next update.
@@ -330,8 +330,7 @@ python ParseOutput_xspec.py
 python cleanup.py
 ```
 **Step 13: Finale step, creating maps**
-- Open ```pipeline_maps.py``` using any text editor.
-- Edit the ```binmap``` variable and save.
+
 - Run ```pipeline_maps.py```
 ```
 python pipeline_maps.py

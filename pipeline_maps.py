@@ -7,8 +7,8 @@ import pandas as pd
 from astropy.io import fits
 import numpy as np
 
-#replace /home/zareef/minihalo/data/a2256 with your path
-binmap = '/home/zareef/minihalo/data/a2256/merged/contbin_sn' + str(d.sn_per_region) + '_smooth' + str(d.reg_smoothness) + '/contbin_binmap.fits'
+
+binmap = d.parentdir + '/merged/contbin_sn' + str(d.sn_per_region) + '_smooth' + str(d.reg_smoothness) + '/contbin_binmap.fits'
 
 
 

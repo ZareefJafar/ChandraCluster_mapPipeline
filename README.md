@@ -354,8 +354,7 @@ DONE!!!!!!!!
 
 ### Additional Resources: 
 
-Some resources which hepled me to work with this pipeline and also my ongoing work on detecting cold frontfrom galaxy clusters with potentail minihalo. 
-
+Some resources which hepled me to work with this pipeline and also my ongoing work on detecting cold fronts from galaxy clusters with potential minihalo.  
 - [Galaxy Clusters, ARGI](http://abekta.iub.edu.bd/rs/gc)
 - [A Brief Intro to the Chandra Mission by Jonathan McDowell](https://cxc.harvard.edu/ciao/workshop/jan21/jcm.ws21.pdf)
 - [An X-ray Data Primer](https://cxc.harvard.edu/cdo/xray_primer.pdf)

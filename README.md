@@ -2,7 +2,7 @@ Pipeline to create x-ray temeprature maps, pressure maps, surface brightness map
 
 This pipeline is based on a [pipeline](https://github.com/jpbreuer/Chandra_pipeline) created by [Jean-Paul Breuer](http://jpbreuer.com/aboutme.html)
 
-Specail thanks to,\
+Specail thanks to,
 
 Dr. Khan M B Asad\
 Assistant Professor

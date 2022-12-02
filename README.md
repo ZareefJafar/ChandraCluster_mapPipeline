@@ -2,7 +2,14 @@ Pipeline to create x-ray temeprature maps, pressure maps, surface brightness map
 
 This pipeline is based on a [pipeline](https://github.com/jpbreuer/Chandra_pipeline) created by [Jean-Paul Breuer](http://jpbreuer.com/aboutme.html)
 
+Specail thanks to,\
 
+Dr. Khan M B Asad\
+Assistant Professor
+Independent University, Bangladesh
+
+Jean-Paul Breuer\
+Masaryk University, Czech Republic
 
 ### Environment setup
 
@@ -345,7 +352,16 @@ DONE!!!!!!!!
 - This [paper](https://arxiv.org/pdf/2005.10263.pdf) by J. P. Breuer discusses about image analysis of this cluster.
 
 
+### Additional Resources: 
 
+Some resources which hepled me to work with this pipeline and also my ongoing work on detecting cold frontfrom galaxy clusters with potentail minihalo. 
 
-
+- [Galaxy Clusters, ARGI] (http://abekta.iub.edu.bd/rs/gc)
+- [A Brief Intro to the Chandra Mission by Jonathan McDowell](https://cxc.harvard.edu/ciao/workshop/jan21/jcm.ws21.pdf)
+- [An X-ray Data Primer](https://cxc.harvard.edu/cdo/xray_primer.pdf)
+- [X-ray spectroscopy of galaxy clusters: studying astrophysical processes in the largest celestial laboratories(https://link.springer.com/article/10.1007/s00159-009-0023-3)
+- [Occurrence of Radio Minihalos in a Mass-limited Sample of Galaxy Clusters] (https://iopscience.iop.org/article/10.3847/1538-4357/aa7069/meta)
+- [Expanding the Sample of Radio Minihalos in Galaxy Clusters] (https://iopscience.iop.org/article/10.3847/1538-4357/ab29f1/meta)
+- [Diffuse Radio Emission from Galaxy Clusters] (https://link.springer.com/article/10.1007/s11214-019-0584-z)
+- 
 

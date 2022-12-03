@@ -227,7 +227,7 @@ mkdir -p /home/zareef/minihalo/data/a2256/regionfiles
 - Open ```broad_thresh.img``` with ds9. This file should be located inside ```merged``` folder.\
 Replace the "/home/zareef/minihalo/data/a2256" path with yours.
 ```
-ds9 /home/zareef/minihalo/data/a2256/merged
+ds9 /home/zareef/minihalo/data/a2256/merged/broad_thresh.img
 ```
 - We need to create 3 region files from ```broad_thresh.img``` file.\
 ```src_0.5-7-nps-noem.reg```:\

@@ -158,7 +158,7 @@ There are several python scripts (.py files). Running each script will generate 
 **Step 0: Creating directories**
 
 - Open directory.py.
-- Edit following variables and create these directories manually. Replace the ```/home/zareef/minihalo/data/a2256``` path with yours.
+- Edit following variables. Replace the ```/home/zareef/minihalo/data/a2256``` path with yours.
 
 ```
 cluster = '"a2256"'                              #replace 'a2256' with your cluster name

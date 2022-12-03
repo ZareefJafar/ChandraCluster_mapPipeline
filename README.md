@@ -293,7 +293,7 @@ python Processing_pre_fitting.py
 heainit
 ```
 
-- OPTIONAL STEP: In case of``bash: /headas-init.sh: No such file or directory``` error message run the following commands sequentially
+- OPTIONAL STEP: In case of```bash: /headas-init.sh: No such file or directory``` error message run the following commands sequentially
 ```
 source ~/.bashrc
 ```

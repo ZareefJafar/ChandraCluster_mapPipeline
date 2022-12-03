@@ -287,7 +287,7 @@ Running this will take a long time depending on the data. Code for running it on
 ```
 python Processing_pre_fitting.py
 ```
-- Initialize ```heasoft``` using alias we created previously (Run ```source ~/.bashrc```` and than ```conda activate ciao-4.14``` before if needed).
+- Initialize ```heasoft``` using alias we created previously (Run ```source ~/.bashrc``` followed by ```conda activate ciao-4.14``` before if needed).
 ```
 source ~/.bashrc
 ```

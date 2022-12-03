@@ -287,7 +287,13 @@ Running this will take a long time depending on the data. Code for running it on
 ```
 python Processing_pre_fitting.py
 ```
-- Initialize ```heasoft``` using alias we created previously (Run ```source ~/.bashrc``` followed by ```conda activate ciao-4.14``` before if needed).
+- Initialize ```heasoft``` using alias we created previously.
+
+```
+heainit
+```
+
+- OPTIONAL STEP: In case of``bash: /headas-init.sh: No such file or directory``` error message run the following commands sequentially
 ```
 source ~/.bashrc
 ```
@@ -297,6 +303,7 @@ conda activate ciao-4.14
 ```
 heainit
 ```
+
 - Run generated ```pre-fitting.sh```
 ```
 bash pre-fitting.sh

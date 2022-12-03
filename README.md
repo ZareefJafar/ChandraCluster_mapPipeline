@@ -209,9 +209,6 @@ bash preprocessing.sh
 ```
 python PreProcessing_merge_data_flux.py
 ```
-```
-bash preprocessing.sh
-```
 
 **Step 6: Removing point source from merged image**
 - Create a ```regionfiles``` folder to save region files. (Replace "/home/zareef/minihalo/data/a2256" with your data path. )

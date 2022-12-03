@@ -171,6 +171,15 @@ mkdir -p /home/zareef/minihalo/data/a2256/merged
 ```
 mkdir -p /home/zareef/minihalo/data/a2256/specfile_output
 ```
+- Everything from step 1 will to run on ```conda``` environment.
+```
+conda activate ciao-4.14
+```
+- Now go to the directory where all python scripts are saved. Replace ```/home/zareef/minihalo/scripts``` with your directory.
+```
+cd /home/zareef/minihalo/scripts/ChandraCluster_mapPipeline
+```
+Let's start executing these python scripts from step 1. 
 
 **Step 1: Run PreProcessing_download_data.py**
 ```

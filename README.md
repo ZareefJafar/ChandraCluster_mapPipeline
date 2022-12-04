@@ -107,7 +107,7 @@ sudo make install
 ```
 
 
-**For server**\
+**For server**
 - Open terminal and run the following:
 ```
 git clone https://github.com/jeremysanders/contbin

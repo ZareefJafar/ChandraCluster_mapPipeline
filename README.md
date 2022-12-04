@@ -118,7 +118,7 @@ git clone https://github.com/jeremysanders/contbin
 mkdir -p local/bin
 ```
 
-- Go to the ```contbin``` folder\
+- Go to the ```contbin``` folder
 - Open MakeFile
 ```
 nano MakeFile

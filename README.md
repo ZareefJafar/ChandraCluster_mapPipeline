@@ -136,7 +136,7 @@ sudo make install
 
 To learn more about [contbin](https://github.com/jeremysanders/contbin)
 
-**6. Installing GNU parallel shell tool.(Not yet implemented)**
+**6. OPTIONAL: Installing GNU parallel shell tool.(Not used)**
 
 Run the following:
 ```
@@ -152,7 +152,7 @@ Reference:
 
 
 
-**7. Install SPEX software package.(Not yet implemented)**
+**7. OPTIONAL: Install SPEX software package.(Not used)**
 
 Follow the SPEX installation guide from [here](https://spex-xray.github.io/spex-help/getstarted/install.html).
 

@@ -382,7 +382,7 @@ DONE!!!!!!!!
 
 - All the generated data products including generated bash script and maps of some galaxy clusters using the pipeline: [drive](https://drive.google.com/drive/folders/16Sxy-VS4MbmElKVLhYDZdtxcmunzIFm1?usp=share_link)
 
-- This [paper](https://arxiv.org/pdf/2005.10263.pdf) by J. P. Breuer discusses about image analysis of this cluster.
+- This [paper](https://arxiv.org/pdf/2005.10263.pdf) by J. P. Breuer discusses about image analysis of a2256 cluster.
 
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 ### Additional Resources: 

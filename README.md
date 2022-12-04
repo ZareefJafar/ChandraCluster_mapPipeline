@@ -1,3 +1,6 @@
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+### Introduction
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Pipeline to create x-ray temeprature maps, pressure maps, surface brightness maps, and density maps of  galaxy clusters from [Chandra Data Archive.](https://cda.harvard.edu/chaser/)
 
 This pipeline is based on a [pipeline](https://github.com/jpbreuer/Chandra_pipeline) created by [Jean-Paul Breuer](http://jpbreuer.com/aboutme.html)
@@ -11,7 +14,9 @@ Independent University, Bangladesh
 Jean-Paul Breuer\
 Masaryk University, Czech Republic
 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 ### Environment setup
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 Platform Support: Tested on Ubuntu 20.04.5 lts, Ubuntu 20.04.3 LTS server.
 
@@ -150,8 +155,9 @@ Reference:
 
 Follow the SPEX installation guide from [here](https://spex-xray.github.io/spex-help/getstarted/install.html).
 
-
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 ### Generating maps.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 There are several python scripts (.py files). Running each script will generate a bash script (.sh file). 
 
@@ -368,16 +374,17 @@ python pipeline_maps.py
 All the maps will be saved in the python and bash script folder. Will fix it in the next update.
 
 DONE!!!!!!!!
-
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 ### Sample data, bash scripts and paper.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 - All the generated data products including generated bash script and maps of some galaxy clusters using the pipeline: [drive](https://drive.google.com/drive/folders/16Sxy-VS4MbmElKVLhYDZdtxcmunzIFm1?usp=share_link)
 
 - This [paper](https://arxiv.org/pdf/2005.10263.pdf) by J. P. Breuer discusses about image analysis of this cluster.
 
-
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 ### Additional Resources: 
-
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 Some resources which hepled me to work with this pipeline and also my ongoing work on detecting cold fronts from galaxy clusters with potential minihalo.  
 - [Galaxy Clusters, ARGI](http://abekta.iub.edu.bd/rs/gc)
 - [Asad, MSc thesis](https://drive.google.com/file/d/1RyDp2HOEMch7D02P2CQ9kiDz8j-O6hpf/view)

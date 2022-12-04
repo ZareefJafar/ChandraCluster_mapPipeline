@@ -56,7 +56,7 @@ conda create -n ciao-4.14 -c https://cxc.cfa.harvard.edu/conda/ciao -c conda-for
       Go inside the heasoft directory\
       Will see a folder named like "x86_64-pc-linux-gnu-libc2.31"\
       Copy the folder name\
-      Replace PLATFORM placeholder with "x86_64-pc-linux-gnu-libc2.31"\
+      Replace PLATFORM placeholder with "x86_64-pc-linux-gnu-libc2.31"
 
 
 

@@ -365,6 +365,7 @@ python cleanup.py
 ```
 python pipeline_maps.py
 ```
+All the maps will be saved in the python and bash script folder. Will fix it in the next update.
 
 DONE!!!!!!!!
 

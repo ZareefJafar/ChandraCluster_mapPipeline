@@ -346,6 +346,10 @@ bash xspecfitting.sh
 
 ![xspecfitting_error_2](images/xspecfitting_error_2.png)
 
+- Return to the python script folder and start following from step 11. Replace ```/home/zareef/minihalo/scripts/ChandraCluster_mapPipeline``` with yours.
+```
+cd /home/zareef/minihalo/scripts/ChandraCluster_mapPipeline
+```
 
 **Step 11: Run ParseOutput_xspec.py**
 ```

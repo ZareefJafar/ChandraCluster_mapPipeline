@@ -171,7 +171,7 @@ mkdir -p /home/zareef/minihalo/data/a2256/merged
 ```
 mkdir -p /home/zareef/minihalo/data/a2256/specfile_output
 ```
-- Everything from step 1 will to run on ```conda``` environment.
+- Everything from step 1 will run on ```conda``` environment.
 ```
 conda activate ciao-4.14
 ```

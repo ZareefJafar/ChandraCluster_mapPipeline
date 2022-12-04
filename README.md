@@ -242,7 +242,7 @@ Region file format:```Region - ciao```,```Coordinate System - wcs```\
 Save location: ```/home/zareef/minihalo/data/a2256/regionfiles```. Replace ```/home/zareef/minihalo/data/a2256``` with your data path. 
 
 
-- Again open ```broad_thresh.img``` with ds9. Open ```square.reg``` from ```regionfiles```. Save this as min_xy.reg. Region file format:```Region - ciao```,```Coordinate System - physical```\
+- Again open ```broad_thresh.img``` with ds9. Open ```square.reg``` from ```regionfiles```. Save this as ```min_xy.reg```. Region file format:```Region - ciao```,```Coordinate System - physical```\
 
 - Open the ```min_xy.reg``` using any text editor. You will see a region value which will look something like this:\
 ```box(3871.7065,3939.0178,1733.5429,1135.1521,0)```. These values will be different for your cluster data.\

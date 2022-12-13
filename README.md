@@ -1,4 +1,4 @@
-
+-----------------------
 ### Introduction
 ------------------
 
@@ -16,7 +16,7 @@ Independent University, Bangladesh
 Jean-Paul Breuer\
 Masaryk University, Czech Republic
 
-
+-----------------------
 ### Environment setup
 -----------------------
 
@@ -157,7 +157,7 @@ Reference:
 
 Follow the SPEX installation guide from [here](https://spex-xray.github.io/spex-help/getstarted/install.html).
 
-
+-----------------------
 ### Generating maps.
 -----------------------
 
@@ -377,7 +377,7 @@ All the maps will be saved in the python and bash script folder. Will fix it in 
 
 DONE!!!!!!!!
 
-
+-----------------------
 ### Sample data, bash scripts and paper.
 -----------------------
 
@@ -385,7 +385,7 @@ DONE!!!!!!!!
 
 - This [paper](https://arxiv.org/pdf/2005.10263.pdf) by J. P. Breuer discusses about image analysis of a2256 cluster.
 
-
+-----------------------
 ### Additional Resources: 
 -----------------------
 

@@ -15,6 +15,32 @@ mkdir -p /home/zareef/minihalo/data/a2256/specfile_output
 
 
 
+
+
+
+
+
+minx = 4042.78008; miny = 3931.0922
+
+'''
+For getting the value of minx and miny create the following region file
+- min_xy.reg: opnen broad_thresh.img in ds9 and open square.reg. Save this as min_xy.reg. Region : ciao, Coordinate System: physical
+
+if value inside min_xy.reg is box(3871.7065,3939.0178,1733.5429,1135.1521,0)
+
+x = 3871.7065-(1733.5429/2) = 3004.93505
+y = 3939.0178-(1135.1521/2) = 3371.44175
+
+
+save these three region files to    /home/zareef/minihalo/data/a2256/regionfiles
+'''
+
+
+
+
+
+
+
 import re
 import sys
 import os
@@ -38,12 +64,53 @@ from astropy import wcs
 #from scipy import ndimage
 #from scipy.stats import multivariate_normal
 
+#os.mkdir('/home/zareef/minihalo/data/a2256')
+
+
+
+
+
+
+
+
+
+clusterName = input("Enter cluster name for downloading data from Chandra Data Archive.\ne.g. aco3444 for aco3444 galaxy cluster.\nCluster name: ")
+obsids_search = os.popen('find_chandra_obsid ' + clusterName).read()
+
+print("Following observations will be downloaded.\nIf you want to use only selected observations please manually edit the PreProcessing_download_data.py file before running STEP 2.\n\n"+obsids_search)
+
+clusterDirec = input("\nEnter the path where all the data files will be downloaded.\ne.g. /home/usr/minihalo/data/\ndata path: ")
+
+
+
+
+
+
+#clusterNameVarify = input(f"{val}for{val} is a portal for {val}.")
+
 ###--- Required ---> Make these directories if they do not exist 
-cluster = '"a2256"'     ##'"07 17 31.20" "+37 45 35.4"'#
-parentdir = '/home/zareef/minihalo/data/a2256'# + cluster + '/'
+#cluster = clusterName     ##'"07 17 31.20" "+37 45 35.4"'#
+parentdir = clusterDirec+clusterName # + cluster + '/'
 specfile_outputdir = parentdir + '/specfile_output'
+regionDirec = parentdir + '/regionfiles'
 XSPEC = True #keep one True and one False, not both True, else issues parsing + making maps
 SPEX = False
+
+
+
+
+
+os.makedirs(parentdir)
+
+
+# Path
+merged_path = os.path.join(parentdir, 'merged/contbin_sn70_smooth100/outreg/sex')
+os.makedirs(merged_path)
+os.makedirs(specfile_outputdir)
+os.makedirs(regionDirec)
+
+print("\nCreated paths\n"+parentdir+"\n"+merged_path+"\n"+specfile_outputdir+"\n"+regionDirec)
+
 
 #%%
 ###--- PreProcessing Flags ---> # Output from these flags results in a different code inside the prelim_products.sh 

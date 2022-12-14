@@ -160,34 +160,23 @@ Follow the SPEX installation guide from [here](https://spex-xray.github.io/spex-
 -----------------------
 ### Generating maps.
 -----------------------
+To download ChandraCluster_mapPipeline, simply run ```git clone https://github.com/ZareefJafar/ChandraCluster_mapPipeline.git.```
+
+unzip and go to the folder ```cd /home/usr/Downloads/ChandraCluster_mapPipeline```.
 
 There are several python scripts (.py files). Running each script will generate a bash script (.sh file). 
 
+Let's start!!!
+
 **Step 0: Creating directories**
-
-- Open directory.py.
-- Edit following variables. Replace the ```/home/zareef/minihalo/data/a2256``` path with yours.
-
-```
-cluster = '"a2256"'                              #replace 'a2256' with your cluster name
-parentdir = '/home/zareef/minihalo/data/a2256'   #path where all the data will be stored   
-```
-- create additional directories inside data directory. Replace the ```/home/zareef/minihalo/data/a2256``` path with yours.
-```
-mkdir -p /home/zareef/minihalo/data/a2256/merged 
-```
-```
-mkdir -p /home/zareef/minihalo/data/a2256/specfile_output
-```
-- Everything from step 1 will run on ```conda``` environment.
+- Everything will run on ```conda``` environment. So, activate it first.
 ```
 conda activate ciao-4.14
 ```
-- Now go to the directory where all python scripts are saved. Replace ```/home/zareef/minihalo/scripts``` with your directory.
+- Run ```directory.py```. Enter the instructed informations. 
 ```
-cd /home/zareef/minihalo/scripts/ChandraCluster_mapPipeline
+python directory.py
 ```
-Let's start executing these python scripts from step 1. 
 
 **Step 1: Run PreProcessing_download_data.py**
 ```
@@ -228,10 +217,7 @@ python PreProcessing_merge_data_flux.py
 ```
 
 **Step 6: Removing point source from merged image**
-- Create a ```regionfiles``` folder to save region files. (Replace "/home/zareef/minihalo/data/a2256" with your data path. )
-```
-mkdir -p /home/zareef/minihalo/data/a2256/regionfiles
-```
+
 - Open ```broad_thresh.img``` with ds9. This file should be located inside ```merged``` folder.\
 Replace the "/home/zareef/minihalo/data/a2256" path with yours.
 ```
@@ -283,12 +269,7 @@ bash preliminary_products.sh
 
 **Step 8: Converting region file coordinate system syntax**
 
-- Create ```/home/zareef/minihalo/data/a2256/merged/contbin_sn70_smooth100/outreg/sex``` directory. (Replace ```/home/zareef/minihalo/data/a2256``` with your data path.)
-```
-mkdir -p /home/zareef/minihalo/data/a2256/merged/contbin_sn70_smooth100/outreg/sex
-```
 - Convert region file coordinate system syntax
-
 ```
 python RegCoordChange.py
 ```

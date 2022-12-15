@@ -1,39 +1,6 @@
 
-"""
-Make the following directory
-
-/home/zareef/minihalo/data/a2256/merged
 
 
-go to terminal and run following:
-mkdir -p /home/zareef/minihalo/data/a2256/merged
-mkdir -p /home/zareef/minihalo/data/a2256/specfile_output
-
-"""
-
-
-
-
-
-
-
-
-
-
-minx = 4042.78008; miny = 3931.0922
-
-'''
-For getting the value of minx and miny create the following region file
-- min_xy.reg: opnen broad_thresh.img in ds9 and open square.reg. Save this as min_xy.reg. Region : ciao, Coordinate System: physical
-
-if value inside min_xy.reg is box(3871.7065,3939.0178,1733.5429,1135.1521,0)
-
-x = 3871.7065-(1733.5429/2) = 3004.93505
-y = 3939.0178-(1135.1521/2) = 3371.44175
-
-
-save these three region files to    /home/zareef/minihalo/data/a2256/regionfiles
-'''
 
 
 
@@ -74,23 +41,31 @@ from astropy import wcs
 
 
 
-clusterName = input("Enter cluster name for downloading data from Chandra Data Archive.\ne.g. aco3444 for aco3444 galaxy cluster.\nCluster name: ")
-obsids_search = os.popen('find_chandra_obsid ' + clusterName).read()
-
-print("Following observations will be downloaded.\nIf you want to use only selected observations please manually edit the PreProcessing_download_data.py file before running STEP 2.\n\n"+obsids_search)
-
-clusterDirec = input("\nEnter the path where all the data files will be downloaded.\ne.g. /home/usr/minihalo/data/\ndata path: ")
 
 
+def create_path():
+	os.makedirs(parentdir)
+	merged_path = os.path.join(parentdir, 'merged/contbin_sn70_smooth100/outreg/sex')
+	os.makedirs(merged_path)
+	os.makedirs(specfile_outputdir)
+	os.makedirs(regionDirec)
 
+	print("\nCreated paths\n"+parentdir+"\n"+merged_path+"\n"+specfile_outputdir+"\n"+regionDirec)
 
 
 
 #clusterNameVarify = input(f"{val}for{val} is a portal for {val}.")
 
 ###--- Required ---> Make these directories if they do not exist 
-#cluster = clusterName     ##'"07 17 31.20" "+37 45 35.4"'#
-parentdir = clusterDirec+clusterName # + cluster + '/'
+f = open('directory_list.txt','r')
+content=[]
+with open ('directory_list.txt', 'rt') as myfile:  
+    for line in myfile:                   
+        content.append(line)  
+f.close()
+cluster = content[0].strip()    ##'"07 17 31.20" "+37 45 35.4"'#
+MyDir = os.path.expanduser('~')
+parentdir = MyDir+'/'+content[1]+'/'+cluster # + cluster + '/'
 specfile_outputdir = parentdir + '/specfile_output'
 regionDirec = parentdir + '/regionfiles'
 XSPEC = True #keep one True and one False, not both True, else issues parsing + making maps
@@ -99,17 +74,24 @@ SPEX = False
 
 
 
-
-os.makedirs(parentdir)
-
-
 # Path
-merged_path = os.path.join(parentdir, 'merged/contbin_sn70_smooth100/outreg/sex')
-os.makedirs(merged_path)
-os.makedirs(specfile_outputdir)
-os.makedirs(regionDirec)
 
-print("\nCreated paths\n"+parentdir+"\n"+merged_path+"\n"+specfile_outputdir+"\n"+regionDirec)
+
+
+
+if __name__ == "__main__":
+	file_name = 'directory_list.txt'
+
+	with open(file_name, 'w', encoding='utf-8') as f:
+		clusterName = input("Enter cluster name for downloading data from Chandra Data Archive.\ne.g. aco3444 for aco3444 galaxy cluster.\nCluster name: ")
+		obsids_search = os.popen('find_chandra_obsid ' + clusterName).read()
+		f.write(clusterName+'\n')
+		print("Following observations will be downloaded.\nIf you want to use only selected observations please manually edit the PreProcessing_download_data.py file before running STEP 2.\n\n"+obsids_search)
+
+		clusterDirec = input("\nEnter the path where all the data files will be downloaded.\ne.g. [data_dir]/[sub_data_dir]/...\ndata path: ")
+		f.write(clusterDirec)
+		f.close()
+		create_path()
 
 
 #%%

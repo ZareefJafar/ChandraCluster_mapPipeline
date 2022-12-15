@@ -160,7 +160,7 @@ Follow the SPEX installation guide from [here](https://spex-xray.github.io/spex-
 -----------------------
 ### Generating maps.
 -----------------------
-To download ChandraCluster_mapPipeline, simply run ```git clone https://github.com/ZareefJafar/ChandraCluster_mapPipeline.git.```
+To download ChandraCluster_mapPipeline, simply run ```git clone https://github.com/ZareefJafar/ChandraCluster_mapPipeline.git```
 
 unzip and go to the folder ```cd ~/Downloads/ChandraCluster_mapPipeline```.
 

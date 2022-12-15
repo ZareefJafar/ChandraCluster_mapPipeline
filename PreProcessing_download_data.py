@@ -19,9 +19,9 @@ obsids, obsids_padded, obsids_fullstr = FindData(d.cluster)
 # could not deflare 965
 # 1386 missing background for ccd8 - removed
 #######################
-obsids = obsids[3:]
-obsids_padded = obsids_padded[3:]
-obsids_fullstr = ','.join(map(str, obsids)) 
+# obsids = obsids[3:]
+# obsids_padded = obsids_padded[3:]
+# obsids_fullstr = ','.join(map(str, obsids)) 
 #######################
 ###--- OPTIONAL --->
 #obsids = ['2419','16129','16514','16515','16516']

@@ -194,6 +194,9 @@ python PreProcessing_reprocess_data.py
 bash preprocessing.sh
 ```
 
+possible error: 
+[pget: parameter not found...](https://cxc.cfa.harvard.edu/ciao/faq/pget_error.html)
+
 **Step 3: Run PreProcessing_flare_filter.py**
 
 ```

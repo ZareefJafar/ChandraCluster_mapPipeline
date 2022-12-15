@@ -162,7 +162,7 @@ Follow the SPEX installation guide from [here](https://spex-xray.github.io/spex-
 -----------------------
 To download ChandraCluster_mapPipeline, simply run ```git clone https://github.com/ZareefJafar/ChandraCluster_mapPipeline.git.```
 
-unzip and go to the folder ```cd /home/usr/Downloads/ChandraCluster_mapPipeline```.
+unzip and go to the folder ```cd ~/Downloads/ChandraCluster_mapPipeline```.
 
 There are several python scripts (.py files). Running each script will generate a bash script (.sh file). 
 

@@ -218,10 +218,10 @@ python PreProcessing_merge_data_flux.py
 
 **Step 6: Removing point source from merged image**
 
-- Open ```broad_thresh.img``` with ds9. This file should be located inside ```merged``` folder.\
-Replace the "/home/zareef/minihalo/data/a2256" path with yours.
+- Open ```broad_thresh.img``` with ds9. This file should be located inside ```merged``` folder inside cluster data folder.
+
 ```
-ds9 /home/zareef/minihalo/data/a2256/merged/broad_thresh.img
+ds9 ~/[data_dir]/[cluster_name]/merged/broad_thresh.img
 ```
 - We need to create 3 region files from ```broad_thresh.img``` file.\
 ```src_0.5-7-nps-noem.reg```:\
@@ -233,7 +233,7 @@ A region file that contains all of the pointsources. These are typically foregro
 This will eventually crop out all things outside of the region of interest. 
 
 Region file format:```Region - ciao```,```Coordinate System - wcs```\
-Save location: ```/home/zareef/minihalo/data/a2256/regionfiles```. Replace ```/home/zareef/minihalo/data/a2256``` with your data path. 
+Save location: ```~/[data_dir]/[cluster_name]/regionfiles```.
 
 
 - Run ```PreProcessing_source_crop.py```
@@ -305,9 +305,9 @@ will fix both in the next update.
 ```
 python Processing_xspecfitting.py
 ```
-- Go to ```specfile_output``` folder. You will find a file named```xspecfitting.sh```. Replace ```/home/zareef/minihalo/data/a2256/``` with your data path.
+- Go to ```specfile_output``` folder. You will find a file named```xspecfitting.sh```. 
 ```
-cd /home/zareef/minihalo/data/a2256/specfile_output
+cd ~/[data_dir]/[cluster_name]/specfile_output
 ```
 - run ```xspecfitting.sh```
 ```
@@ -321,9 +321,9 @@ bash xspecfitting.sh
 
 ![xspecfitting_error_2](images/xspecfitting_error_2.png)
 
-- Return to the python script folder and start following from step 11. Replace ```/home/zareef/minihalo/scripts/ChandraCluster_mapPipeline``` with yours.
+- Return to the python script folder and start following from step 11.
 ```
-cd /home/zareef/minihalo/scripts/ChandraCluster_mapPipeline
+cd ~/Downloads/ChandraCluster_mapPipeline
 ```
 
 **Step 11: Run ParseOutput_xspec.py**
@@ -340,7 +340,7 @@ python cleanup.py
 ```
 python pipeline_maps.py
 ```
-All the maps will be saved in the python and bash script folder. Will fix it in the next update.
+All the maps will be saved in the python and bash script folder (```~/Downloads/ChandraCluster_mapPipeline```). Will fix it in the next update.
 
 DONE!!!!!!!!
 

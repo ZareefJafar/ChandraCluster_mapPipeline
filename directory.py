@@ -43,38 +43,12 @@ from astropy import wcs
 
 
 
-def create_path():
-	os.makedirs(parentdir)
-	merged_path = os.path.join(parentdir, 'merged/contbin_sn70_smooth100/outreg/sex')
-	os.makedirs(merged_path)
-	os.makedirs(specfile_outputdir)
-	os.makedirs(regionDirec)
-
-	print("\nCreated paths\n"+parentdir+"\n"+merged_path+"\n"+specfile_outputdir+"\n"+regionDirec)
-
-
-
-#clusterNameVarify = input(f"{val}for{val} is a portal for {val}.")
-
-###--- Required ---> Make these directories if they do not exist 
-f = open('directory_list.txt','r')
-content=[]
-with open ('directory_list.txt', 'rt') as myfile:  
-    for line in myfile:                   
-        content.append(line)  
-f.close()
-cluster = content[0].strip()    ##'"07 17 31.20" "+37 45 35.4"'#
-MyDir = os.path.expanduser('~')
-parentdir = MyDir+'/'+content[1]+'/'+cluster # + cluster + '/'
-specfile_outputdir = parentdir + '/specfile_output'
-regionDirec = parentdir + '/regionfiles'
-XSPEC = True #keep one True and one False, not both True, else issues parsing + making maps
-SPEX = False
 
 
 
 
-# Path
+
+
 
 
 
@@ -91,7 +65,58 @@ if __name__ == "__main__":
 		clusterDirec = input("\nEnter the path where all the data files will be downloaded.\ne.g. [data_dir]/[sub_data_dir]/...\ndata path: ")
 		f.write(clusterDirec)
 		f.close()
-		create_path()
+
+
+
+		
+		content=[]
+		with open ('directory_list.txt', 'rt') as myfile:  
+		    for line in myfile:                   
+		        content.append(line)  
+		myfile.close()
+		cluster = content[0].strip()    ##'"07 17 31.20" "+37 45 35.4"'#
+		MyDir = os.path.expanduser('~')
+		parentdir = MyDir+'/'+content[1]+'/'+cluster # + cluster + '/'
+		specfile_outputdir = parentdir + '/specfile_output'
+		regionDirec = parentdir + '/regionfiles'
+		os.makedirs(parentdir)
+		merged_path = os.path.join(parentdir, 'merged/contbin_sn70_smooth100/outreg/sex')
+		os.makedirs(merged_path)
+		os.makedirs(specfile_outputdir)
+		os.makedirs(regionDirec)
+
+		print("\nCreated paths\n"+parentdir+"\n"+merged_path+"\n"+specfile_outputdir+"\n"+regionDirec)
+
+
+
+
+#clusterNameVarify = input(f"{val}for{val} is a portal for {val}.")
+
+###--- Required ---> Make these directories if they do not exist 
+
+content=[]
+with open ('directory_list.txt', 'rt') as myfile:  
+    for line in myfile:                   
+        content.append(line)  
+myfile.close()
+cluster = content[0].strip()    ##'"07 17 31.20" "+37 45 35.4"'#
+MyDir = os.path.expanduser('~')
+parentdir = MyDir+'/'+content[1]+'/'+cluster # + cluster + '/'
+specfile_outputdir = parentdir + '/specfile_output'
+regionDirec = parentdir + '/regionfiles'
+XSPEC = True #keep one True and one False, not both True, else issues parsing + making maps
+SPEX = False
+
+
+def create_path():
+	os.makedirs(parentdir)
+	merged_path = os.path.join(parentdir, 'merged/contbin_sn70_smooth100/outreg/sex')
+	os.makedirs(merged_path)
+	os.makedirs(specfile_outputdir)
+	os.makedirs(regionDirec)
+
+	print("\nCreated paths\n"+parentdir+"\n"+merged_path+"\n"+specfile_outputdir+"\n"+regionDirec)
+
 
 
 #%%

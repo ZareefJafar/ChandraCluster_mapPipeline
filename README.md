@@ -162,7 +162,7 @@ Follow the SPEX installation guide from [here](https://spex-xray.github.io/spex-
 -----------------------
 To download ChandraCluster_mapPipeline, simply run ```git clone https://github.com/ZareefJafar/ChandraCluster_mapPipeline.git```
 
-unzip and go to the folder ```cd ~/Downloads/ChandraCluster_mapPipeline```.
+Go to the folder ```cd ~/ChandraCluster_mapPipeline```.
 
 There are several python scripts (.py files). Running each script will generate a bash script (.sh file). 
 
@@ -323,7 +323,7 @@ bash xspecfitting.sh
 
 - Return to the python script folder and start following from step 11.
 ```
-cd ~/Downloads/ChandraCluster_mapPipeline
+cd ~/ChandraCluster_mapPipeline
 ```
 
 **Step 11: Run ParseOutput_xspec.py**
@@ -340,7 +340,7 @@ python cleanup.py
 ```
 python pipeline_maps.py
 ```
-All the maps will be saved in the python and bash script folder (```~/Downloads/ChandraCluster_mapPipeline```). Will fix it in the next update.
+All the maps will be saved in the python and bash script folder (```~/ChandraCluster_mapPipeline```).
 
 DONE!!!!!!!!
 

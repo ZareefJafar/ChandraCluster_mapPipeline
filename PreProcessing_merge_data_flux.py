@@ -34,4 +34,4 @@ fluxav = fluxsum/len(fluximdata)
 scaledflux = (2.5*fluximdata*(threshav/fluxav))#(threshav/fluxav)
 _mkmap(scaledflux,d.parentdir + '/merged/scaled_broad_flux.fits',fluxhdr)
 
-print("step5. Merged X-ray surface brightness map created")
+print("step5. Merged X-ray surface brightness map created.\nNow run following command to create region files\nds9 "+ d.parentdir+"/merged/broad_thresh.img")

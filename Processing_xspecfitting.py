@@ -33,3 +33,4 @@ file2.close()
 #file.write('cd ' + specfile_outputdir + '/\n')
 
 subprocess.run('cp xspecfitting.sh ' + d.specfile_outputdir, shell=True)
+print("Go to specfile_output directory to run xspecfitting.sh\ncd "+d.specfile_outputdir)

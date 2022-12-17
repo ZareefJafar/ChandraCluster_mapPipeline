@@ -22,7 +22,8 @@ save these three region files to    /home/zareef/minihalo/data/a2256/regionfiles
 
 hdul = fits.open(d.parentdir+'/merged/scaled_broad_flux_fov_sps.fits')
 region=hdul[0].header['DSVAL1']
-numbers=re.findall("\d+\.\d+",region)
+numbers = [float(x) for x in re.findall(r'-?\d+\.?\d*',region)]
+print(numbers)
 x1 = float(numbers[0])
 x2 = float(numbers[1])
 y1 = float(numbers[2])
@@ -44,3 +45,5 @@ file.write(mkregions)
 file.write('cd ' + d.parentdir +'/merged/\n')
 file.write("echo 'step 7. Contour Binning... Done!'\n\n")
 file.close()
+
+#sn=70, smoothsn=100

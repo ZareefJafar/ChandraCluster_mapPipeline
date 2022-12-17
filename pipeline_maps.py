@@ -25,6 +25,7 @@ XSPEC= True
 
 def _mkmap(input,output,head):
     #hdu = fits.PrimaryHDU(input)
+    output = d.mapDirec+'/'+output
     fits.writeto(output,input,head,overwrite=True)
 
 

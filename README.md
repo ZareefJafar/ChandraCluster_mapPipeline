@@ -268,7 +268,17 @@ bash regcoordchange.sh
 
 **Step 9: Pre fitting**
 
-Running this will take a long time depending on the data. Code for running it on server will come in the next update. Future works includes adding CPU/GPU parallel processing. 
+Running this will take a long time depending on the data. To run this in a remote server or another computer system follow the instruction ```FOR REMOTE MACHINE```. Future works includes adding CPU/GPU parallel processing. 
+
+- OPTIONAL: FOR REMOTE MACHINE.
+Transfer the data file and script file to the remote server. Make sure the remote server has ciao and heasoft installed. Then run ```change_machine.py```.
+
+```
+python change_machine.py
+```
+input: [new_data_dir]/[new_data_subDir]
+
+Continue running remaining steps from the remote server. ```cd /home/[usr]/[new_script_dir]/[new_script_subDir]/ChandraCluster_mapPipeline```.
 
 - Run Processing_pre_fitting.py
 ```
@@ -343,7 +353,7 @@ python cleanup.py
 ```
 python pipeline_maps.py
 ```
-All the maps will be saved in the python and bash script folder (```~/ChandraCluster_mapPipeline```).
+All the maps will be saved in the maps folder of the data folder. ```~/[data_dir]/[cluster_name]/maps```
 
 DONE!!!!!!!!
 

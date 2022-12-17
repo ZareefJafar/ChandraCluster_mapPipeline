@@ -79,13 +79,15 @@ if __name__ == "__main__":
 		parentdir = MyDir+'/'+content[1]+'/'+cluster # + cluster + '/'
 		specfile_outputdir = parentdir + '/specfile_output'
 		regionDirec = parentdir + '/regionfiles'
+		mapDirec = parentdir + '/maps'
 		os.makedirs(parentdir)
 		merged_path = os.path.join(parentdir, 'merged/contbin_sn70_smooth100/outreg/sex')
 		os.makedirs(merged_path)
 		os.makedirs(specfile_outputdir)
 		os.makedirs(regionDirec)
+		os.makedirs(mapDirec)
 
-		print("\nCreated paths\n"+parentdir+"\n"+merged_path+"\n"+specfile_outputdir+"\n"+regionDirec)
+		print("\nCreated directories\n"+parentdir+"\n"+merged_path+"\n"+specfile_outputdir+"\n"+regionDirec+"\n"+mapDirec)
 
 
 
@@ -104,6 +106,7 @@ MyDir = os.path.expanduser('~')
 parentdir = MyDir+'/'+content[1]+'/'+cluster # + cluster + '/'
 specfile_outputdir = parentdir + '/specfile_output'
 regionDirec = parentdir + '/regionfiles'
+mapDirec = parentdir + '/maps'
 XSPEC = True #keep one True and one False, not both True, else issues parsing + making maps
 SPEX = False
 

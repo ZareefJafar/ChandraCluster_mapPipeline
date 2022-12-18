@@ -88,6 +88,10 @@ conda create -n ciao-4.14 -c https://cxc.cfa.harvard.edu/conda/ciao -c conda-for
 - Follow [this](https://www.gnu.org/software/gnuastro/manual/html_node/CFITSIO.html) instructions.
 
 
+**For server**
+Unable to build and install CFITSIO from source without admin access. Will solve in the future update.
+
+
 **5. Download and install Contour binning and accumulative smoothing software.**
 
 - Open terminal and run the following:

@@ -61,8 +61,7 @@ if __name__ == "__main__":
 		obsids_search = os.popen('find_chandra_obsid ' + clusterName).read()
 		f.write(clusterName+'\n')
 		print("Following observations will be downloaded.\nIf you want to use only selected observations please manually edit the PreProcessing_download_data.py file before running STEP 2.\n\n"+obsids_search)
-
-		clusterDirec = input("\nEnter the path where all the data files will be downloaded.\ne.g. [data_dir]/[sub_data_dir]/...\ndata path: ")
+		clusterDirec = input("\nEnter the path where all the data files will be downloaded.\ne.g. /home/[user_name]/[data_dir]/[sub_data_dir]/...\ndata path: ")
 		f.write(clusterDirec)
 		f.close()
 
@@ -76,7 +75,11 @@ if __name__ == "__main__":
 		myfile.close()
 		cluster = content[0].strip()    ##'"07 17 31.20" "+37 45 35.4"'#
 		MyDir = os.path.expanduser('~')
-		parentdir = MyDir+'/'+content[1]+'/'+cluster # + cluster + '/'
+
+		if content[1].startswith(MyDir):
+			parentdir = content[1]+'/'+cluster
+		else:
+			parentdir = MyDir+'/'+content[1]+'/'+cluster # + cluster + '/'
 		specfile_outputdir = parentdir + '/specfile_output'
 		regionDirec = parentdir + '/regionfiles'
 		mapDirec = parentdir + '/maps'

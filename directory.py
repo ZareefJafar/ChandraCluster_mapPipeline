@@ -62,6 +62,18 @@ if __name__ == "__main__":
 		f.write(clusterName+'\n')
 		print("Following observations will be downloaded.\nIf you want to use only selected observations please manually edit the PreProcessing_download_data.py file before running STEP 2.\n\n"+obsids_search)
 		clusterDirec = input("\nEnter the path where all the data files will be downloaded.\ne.g. /home/[user_name]/[data_dir]/[sub_data_dir]/...\ndata path: ")
+
+
+
+		correct=False
+		while correct==False:
+			response = input("Confirm "+clusterDirec+" path? y or n: ")
+			if  response=='y':
+				correct=True
+			else:
+				clusterDirec = input("\nEnter the path where all the data files will be downloaded.\ne.g. /home/[user_name]/[data_dir]/[sub_data_dir]/...\ndata path: ")
+
+
 		f.write(clusterDirec)
 		f.close()
 
@@ -74,12 +86,10 @@ if __name__ == "__main__":
 		        content.append(line)  
 		myfile.close()
 		cluster = content[0].strip()    ##'"07 17 31.20" "+37 45 35.4"'#
-		MyDir = os.path.expanduser('~')
+		
 
-		if content[1].startswith(MyDir):
-			parentdir = content[1]+'/'+cluster
-		else:
-			parentdir = MyDir+'/'+content[1]+'/'+cluster # + cluster + '/'
+
+		parentdir = content[1]+'/'+cluster # + cluster + '/'
 		specfile_outputdir = parentdir + '/specfile_output'
 		regionDirec = parentdir + '/regionfiles'
 		mapDirec = parentdir + '/maps'

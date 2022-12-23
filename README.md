@@ -46,7 +46,7 @@ conda create -n ciao-4.14 -c https://cxc.cfa.harvard.edu/conda/ciao -c conda-for
 
 - Select all in STEP 2 and click submit.
 
-- unzip or extract the .tar.gz file and follow the [INSTALLATION](https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html) process to install HEASOFT.
+- unzip or extract the .tar.gz file ```(using e.g. "tar zxf [tar file]")``` and follow the [INSTALLATION](https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html) process to install HEASOFT.
 
 - To make HEASOFT initialization easy I have created the following alias:
 
@@ -76,8 +76,8 @@ conda create -n ciao-4.14 -c https://cxc.cfa.harvard.edu/conda/ciao -c conda-for
   Type ```heainit``` to initiate HEASOFT whenever needed.
 
 
-
-
+***For server where there is no administrative privileges***
+In the [INSTALLATION](https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html) process check gcc, g++, gfortran, perl, python3 by running ```which gcc```, ```which python3``` etc in the terminal. Use these locations in the ```export``` of ```Building the software``` step.
 
 
 

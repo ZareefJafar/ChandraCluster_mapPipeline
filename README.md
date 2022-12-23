@@ -50,22 +50,23 @@ conda create -n ciao-4.14 -c https://cxc.cfa.harvard.edu/conda/ciao -c conda-for
 
 - To make HEASOFT initialization easy I have created the following alias:
 
-  In the terminal type the following:
-  ```
-  nano ~/.bashrc
-  ```
   Get the PLATFORM name:\
-    Go inside the heasoft directory\
+    Go inside the heasoft directory and run:
     ```
     cd /home/[user_name]/[heasoft_saved_directory]/heasoft-6.31.1/BUILD_DIR
     ```
     ```
     nano config.txt
     ```
-    see the line number 4. which will look something like this: ``` modified Linux system type is x86_64-pc-linux-gnu-libc2.31```\
+    see  line number 4 which will look something like this: ``` modified Linux system type is x86_64-pc-linux-gnu-libc2.31```\
     So, machine's architecture/PLATFORM is ```x86_64-pc-linux-gnu-libc2.31```\ 
 
-    
+  
+  In the terminal type and run the following:
+  ```
+  nano ~/.bashrc
+  ```
+  
   Paste the following command (replace the "heasoft-6.30.1" with downloaded heasoft folder name and "PLATFORM" with machine's architecture):
 
   ```

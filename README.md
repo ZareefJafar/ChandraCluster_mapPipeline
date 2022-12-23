@@ -224,8 +224,9 @@ python PreProcessing_reprocess_data.py
 bash preprocessing.sh
 ```
 
-Issues and solution:\
-[pget_error](https://cxc.cfa.harvard.edu/ciao/faq/pget_error.html)
+Bug List and solution:\
+[pget_error](https://cxc.cfa.harvard.edu/ciao/faq/pget_error.html)\
+[cannot import name 'object' from 'numpy'](https://cxc.cfa.harvard.edu/ciao/watchout.html)
 
 **Step 3: Run PreProcessing_flare_filter.py**
 

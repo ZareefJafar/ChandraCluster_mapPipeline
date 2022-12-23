@@ -59,7 +59,7 @@ conda create -n ciao-4.14 -c https://cxc.cfa.harvard.edu/conda/ciao -c conda-for
     nano config.txt
     ```
     see  line number 4 which will look something like this: ``` modified Linux system type is x86_64-pc-linux-gnu-libc2.31```\
-    So, machine's architecture/PLATFORM is ```x86_64-pc-linux-gnu-libc2.31```\ 
+    So, machine's architecture/PLATFORM is ```x86_64-pc-linux-gnu-libc2.31```\
   In the terminal type and run the following:
   ```
   nano ~/.bashrc

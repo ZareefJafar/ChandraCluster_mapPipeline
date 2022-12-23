@@ -76,8 +76,9 @@ conda create -n ciao-4.14 -c https://cxc.cfa.harvard.edu/conda/ciao -c conda-for
   Type ```heainit``` to initiate HEASOFT whenever needed.
 
 
-***For server where there is no administrative privileges***
-In the [INSTALLATION](https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html) process check gcc, g++, gfortran, perl, python3 by running ```which gcc```, ```which python3``` etc in the terminal. Use these locations in the ```export``` of ```Building the software``` step.
+***[OPTIONAL]For server where there is no administrative privileges***
+
+During the [INSTALLATION](https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html) process check gcc, g++, gfortran, perl, python3 by running ```which gcc```, ```which python3``` etc in the terminal. Use these locations in the ```export``` of ```Building the software``` step.
 
 
 
@@ -87,7 +88,7 @@ In the [INSTALLATION](https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html) proces
 
 - Follow [this](https://www.gnu.org/software/gnuastro/manual/html_node/CFITSIO.html) instructions.
 
-**For server where there is no administrative privileges**\
+**[OPTIONAL]For server where there is no administrative privileges**\
 In the ```./configure``` part of the instructions replace the ```--prefix=/usr/local``` with ```--prefix=[home]/[usr_name]/local/bin```. Create ```[home]/[usr_name]/local/bin``` if it is not created before.
 
 **5. Download and install Contour binning and accumulative smoothing software.**
@@ -110,7 +111,7 @@ sudo make install
 ```
 
 
-**For server where there is no administrative privileges**
+**[OPTIONAL]For server where there is no administrative privileges**
 - Open terminal and run the following:
 ```
 git clone https://github.com/jeremysanders/contbin

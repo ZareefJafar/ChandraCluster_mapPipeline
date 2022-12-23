@@ -100,7 +100,7 @@ git clone https://github.com/jeremysanders/contbin
 ```
 - Go to the downloaded folder directory.
 ```
-cd ~/Downloads/contbin
+cd home/[user_name]/[dowload_location]/contbin
 ```
 - Build:
 ```
@@ -112,15 +112,15 @@ sudo make install
 ```
 
 
-**For server**
+**For server where there is no administrative privileges**
 - Open terminal and run the following:
 ```
 git clone https://github.com/jeremysanders/contbin
 ```
 
-- Create a ```local/bin``` directory in home directory:
+- Create a ```local/bin``` directory in home directory (Do not do this if you already have one in the current user):
 ```
-mkdir -p local/bin
+mkdir -p [home]/[usr_name]/local/bin
 ```
 
 - Go to the ```contbin``` folder
@@ -128,7 +128,27 @@ mkdir -p local/bin
 ```
 nano MakeFile
 ```
-- Set the ```bindir``` varaible path as the created local/bin path (e.g ```/home/usr/local/bin```)
+- Edit following parameters:
+
+You need to change the line in the Makefile that says linkflags=... to have -L/path/of/library  at the start. Change the line which says CXXFLAGS=... to have -I/path/of/include/directory  at the start.
+
+e.g (for /usr/local/lib and /usr/local/include)
+
+...
+```
+# add -lsocket to below for Solaris
+# add -Ldirname to add directory to link path to look for cfitsio
+linkflags=-L/usr/local/lib -lcfitsio -Lparammm -lparammm -lpthread 
+
+# where to install (not very well tested)
+bindir=/usr/local/bin
+
+# sensible compiler flags
+export CXXFLAGS=-I/usr/local/include -O2 -g -Wall -std=c++11
+export CXX=g++
+...
+```
+
 
 - Build:
 ```

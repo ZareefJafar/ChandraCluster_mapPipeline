@@ -88,8 +88,7 @@ conda create -n ciao-4.14 -c https://cxc.cfa.harvard.edu/conda/ciao -c conda-for
 - Follow [this](https://www.gnu.org/software/gnuastro/manual/html_node/CFITSIO.html) instructions.
 
 **For server where there is no administrative privileges**\
-In the ```./configure``` part of the instructions replace the ```--prefix=/usr/local``` with ```--prefix=[home]/[usr_name]/local/bin```. Create ```[home]/[usr_name]/local/bin``` you you do not have any. 
-
+In the ```./configure``` part of the instructions replace the ```--prefix=/usr/local``` with ```--prefix=[home]/[usr_name]/local/bin```. Create ```[home]/[usr_name]/local/bin``` if it is not created before.
 
 **5. Download and install Contour binning and accumulative smoothing software.**
 

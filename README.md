@@ -54,16 +54,24 @@ conda create -n ciao-4.14 -c https://cxc.cfa.harvard.edu/conda/ciao -c conda-for
   ```
   nano ~/.bashrc
   ```
+  Get the PLATFORM name:\
+    Go inside the heasoft directory\
+    ```
+    cd /home/[user_name]/[heasoft_saved_directory]/heasoft-6.31.1/BUILD_DIR
+    ```
+    ```
+    nano config.txt
+    ```
+    see the line number 4. which will look something like this: ``` modified Linux system type is x86_64-pc-linux-gnu-libc2.31```\
+    So, machine's architecture/PLATFORM is ```x86_64-pc-linux-gnu-libc2.31```\ 
+
+    
   Paste the following command (replace the "heasoft-6.30.1" with downloaded heasoft folder name and "PLATFORM" with machine's architecture):
 
   ```
   alias heainit='export HEADAS=/path/to/your/installed/heasoft-6.30.1/(PLATFORM); . $HEADAS/headas-init.sh'
   ```
-  To get the PLATFORM name:\
-      Go inside the heasoft directory\
-      Will see a folder named like "x86_64-pc-linux-gnu-libc2.31"\
-      Copy the folder name\
-      Replace PLATFORM placeholder with "x86_64-pc-linux-gnu-libc2.31"
+
 
 
 

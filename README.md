@@ -96,7 +96,7 @@ During the [INSTALLATION](https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html) pr
 - Follow [this](https://www.gnu.org/software/gnuastro/manual/html_node/CFITSIO.html) instructions.
 
 **[OPTIONAL]For server where there is no administrative privileges**\
-In the ```./configure``` part of the instructions replace the ```--prefix=/usr/local``` with ```--prefix=[home]/[usr_name]/local/bin```. Create ```[home]/[usr_name]/local/bin``` if it is not created before.
+In the ```./configure``` part of the instructions replace the ```--prefix=/usr/local``` with ```--prefix=[home]/[usr_name]/local/bin```. Create ```mkdir -p [home]/[usr_name]/local/bin``` if it is not created before.
 
 **5. Download and install Contour binning and accumulative smoothing software.**
 

@@ -130,9 +130,9 @@ mkdir -p [home]/[usr_name]/local/bin
 ```
 
 - Go to the ```contbin``` folder
-- Open MakeFile
+- Open Makefile
 ```
-nano MakeFile
+nano Makefile
 ```
 - Edit following parameters:
 

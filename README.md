@@ -162,7 +162,7 @@ make
 ```
 - Copy the built program:
 ```
-sudo make install 
+make install 
 ```
 
 To learn more about [contbin](https://github.com/jeremysanders/contbin)

@@ -79,7 +79,7 @@ conda create -n ciao-4.15 -c https://cxc.cfa.harvard.edu/conda/ciao -c conda-for
   Type ```heainit``` to initiate HEASOFT whenever needed.
 
 
-***[OPTIONAL]For server where there is no administrative privileges***
+***[OPTIONAL]For users without sudo access***
 
 During the [INSTALLATION](https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html) process check gcc, g++, gfortran, perl, python3 by running ```which gcc```, ```which python3``` etc in the terminal. Use these locations in the ```export``` of ```Building the software``` step.
 
@@ -91,7 +91,7 @@ During the [INSTALLATION](https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html) pr
 
 - Follow [this](https://www.gnu.org/software/gnuastro/manual/html_node/CFITSIO.html) instructions.
 
-**[OPTIONAL]For server where there is no administrative privileges**\
+***[OPTIONAL]For users without sudo access***\
 In the ```./configure``` part of the instructions replace the ```--prefix=/usr/local``` with ```--prefix=[home]/[usr_name]/local/bin```. Create ```mkdir -p [home]/[usr_name]/local/bin``` if it is not created before.
 
 **5. Download and install Contour binning and accumulative smoothing software.**
@@ -114,7 +114,7 @@ sudo make install
 ```
 
 
-**[OPTIONAL]For server where there is no administrative privileges**
+***[OPTIONAL]For users without sudo access***
 - Open terminal and run the following:
 ```
 git clone https://github.com/jeremysanders/contbin
@@ -163,6 +163,7 @@ make install
 
 To learn more about [contbin](https://github.com/jeremysanders/contbin)
 
+The tools in step 6 and 7 are not implemented yet in this pipeline. They maybe added as an option in future update.\ 
 **6. OPTIONAL: Installing GNU parallel shell tool.(Not used)**
 
 Run the following:
@@ -295,13 +296,13 @@ bash regcoordchange.sh
 
 **Step 9: Pre fitting**
 Running this will take a long time depending on the data. To run this in a remote server or another computer system follow the instruction ```FOR REMOTE MACHINE```. Future works includes adding CPU/GPU parallel processing.\
-- [OPTIONAL]:FOR REMOTE MACHINE.\
+- ***[OPTIONAL]:FOR REMOTE MACHINE.***\
 Transfer the data file and script file to the remote server. Make sure the remote server has ciao and heasoft installed. Then run ```change_machine.py```.
 ```
 python change_machine.py
 ```
 input: /....../[new_data_dir]\
-For server where there is no administrative privileges, run following commands:\
+-***[OPTIONAL]If user without sudo access***:\
 first go to the script/code directory
 ```
 cd ~/.../ChandraCluster_mapPipeline

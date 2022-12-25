@@ -294,8 +294,8 @@ python RegCoordChange.py
 bash regcoordchange.sh
 ```
 
-**Step 9: Pre fitting**
-Running this will take a long time depending on the data. To run this in a remote server or another computer system follow the instruction ```FOR REMOTE MACHINE```. Future works includes adding CPU/GPU parallel processing.\
+**Step 9: Pre fitting**\
+Running this will take a long time depending on the data. To run this in a remote server or another computer system follow the instruction ```FOR REMOTE MACHINE```. Future works includes adding CPU/GPU parallel processing.
 - ***[OPTIONAL]:FOR REMOTE MACHINE.***\
 Transfer the data file and script file to the remote server. Make sure the remote server has ciao and heasoft installed. Then run ```change_machine.py```.
 ```

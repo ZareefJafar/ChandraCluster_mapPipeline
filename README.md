@@ -403,7 +403,7 @@ DONE!!!!!!!!
 ### Additional Resources: 
 -----------------------
 
-Some resources which hepled me to work with this pipeline and also my ongoing work on detecting cold fronts from galaxy clusters with potential minihalo.  
+Some resources which helped me to work with this pipeline and also my ongoing work on detecting cold fronts from galaxy clusters with potential minihalo.  
 - [Galaxy Clusters, ARGI](http://abekta.iub.edu.bd/rs/gc)
 - [Contour binning: a new technique for spatially resolved X-ray spectroscopy applied to Cassiopeia A
 ](https://ui.adsabs.harvard.edu/abs/2006MNRAS.371..829S/abstract)

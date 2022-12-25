@@ -306,7 +306,7 @@ Transfer the data file and script file to the remote server. Make sure the remot
 ```
 python change_machine.py
 ```
-input: [new_data_dir]/[new_data_subDir]\
+input: /....../[new_data_dir]
 
 For server where there is no administrative privileges, run following commands:\
 first go to the script/code directory

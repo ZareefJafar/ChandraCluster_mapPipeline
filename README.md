@@ -65,18 +65,14 @@ conda create -n ciao-4.14 -c https://cxc.cfa.harvard.edu/conda/ciao -c conda-for
   nano ~/.bashrc
   ```
   
-  Paste the following command (replace the "heasoft-6.30.1" with downloaded heasoft folder name and "PLATFORM" with machine's architecture):
+  Paste the following command (replace the "heasoft-6.31.1" with your downloaded heasoft version and replace "PLATFORM" with machine's architecture):
 
   ```
-  alias heainit='export HEADAS=/path/to/your/installed/heasoft-6.30.1/(PLATFORM); . $HEADAS/headas-init.sh'
+  alias heainit='export HEADAS=/path/to/your/installed/heasoft-6.31.1/(PLATFORM); . $HEADAS/headas-init.sh'
   ```
-
-
-
-
-  Finale Initialization alias will look something like this:
+  For example I created following alias in the ```.bashrc``` script of my system:
   ```
-  alias heainit='export HEADAS=/home/usr/software/heasoft-6.30.1/x86_64-pc-linux-gnu-libc2.31; . $HEADAS/headas-init.sh'
+  alias heainit='export HEADAS=/home/zareef/software/heasoft-6.31.1/x86_64-pc-linux-gnu-libc2.31; . $HEADAS/headas-init.sh'
   ```
   save the ~/.bashrc.\
   run ```source ~/.bashrc```\

@@ -163,7 +163,7 @@ make install
 
 To learn more about [contbin](https://github.com/jeremysanders/contbin)
 
-The tools in step 6 and 7 are not implemented yet in this pipeline. They maybe added as an option in future update.\ 
+The tools in step 6 and 7 are not implemented yet in this pipeline. They may be added as an option in future updates.\
 **6. OPTIONAL: Installing GNU parallel shell tool.(Not used)**
 
 Run the following:

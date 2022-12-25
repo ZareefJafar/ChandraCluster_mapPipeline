@@ -294,19 +294,15 @@ bash regcoordchange.sh
 ```
 
 **Step 9: Pre fitting**
-
-Running this will take a long time depending on the data. To run this in a remote server or another computer system follow the instruction ```FOR REMOTE MACHINE```. Future works includes adding CPU/GPU parallel processing. 
-
-- [OPTIONAL]: FOR REMOTE MACHINE.
+Running this will take a long time depending on the data. To run this in a remote server or another computer system follow the instruction ```FOR REMOTE MACHINE```. Future works includes adding CPU/GPU parallel processing.\
+- [OPTIONAL]: FOR REMOTE MACHINE.\
 Transfer the data file and script file to the remote server. Make sure the remote server has ciao and heasoft installed. Then run ```change_machine.py```.
 ```
 python change_machine.py
 ```
-input: /....../[new_data_dir]
-
+input: /....../[new_data_dir]\
 For server where there is no administrative privileges, run following commands:\
 first go to the script/code directory
-
 ```
 cd ~/.../ChandraCluster_mapPipeline
 ```
@@ -318,7 +314,6 @@ set the ASCDS_WORK_PATH environment variable. See [Bugs: wavdetect](https://cxc.
 ```
 export ASCDS_WORK_PATH=$PWD/tmp
 ```
-
 Continue running remaining steps from the remote server.
 
 - Run Processing_pre_fitting.py

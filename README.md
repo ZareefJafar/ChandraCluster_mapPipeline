@@ -320,7 +320,7 @@ mkdir tmp
 export ASCDS_WORK_PATH=$PWD/tmp
 ```
 
-Continue running remaining steps from the remote server. \
+Continue running remaining steps from the remote server.
 
 - Run Processing_pre_fitting.py
 ```

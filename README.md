@@ -302,7 +302,7 @@ Transfer the data file and script file to the remote server. Make sure the remot
 python change_machine.py
 ```
 input: /....../[new_data_dir]\
-- ***[OPTIONAL]If user without sudo access***:\
+- ***[OPTIONAL]For users without sudo access***\
 first go to the script/code directory
 ```
 cd ~/.../ChandraCluster_mapPipeline

@@ -307,8 +307,21 @@ Transfer the data file and script file to the remote server. Make sure the remot
 python change_machine.py
 ```
 input: [new_data_dir]/[new_data_subDir]\
+
+For server where there is no administrative privileges, run following commands when you are at the script/code directory :
+
+```
+cd ~/.../ChandraCluster_mapPipeline
+```
+```
+mkdir tmp
+```
+```
+export ASCDS_WORK_PATH=$PWD/tmp
+```
+
 Continue running remaining steps from the remote server. \
-```cd /home/[usr]/[new_script_dir]/[new_script_subDir]/ChandraCluster_mapPipeline```.
+
 - Run Processing_pre_fitting.py
 ```
 python Processing_pre_fitting.py

@@ -407,7 +407,8 @@ Some resources which hepled me to work with this pipeline and also my ongoing wo
 - [Galaxy Clusters, ARGI](http://abekta.iub.edu.bd/rs/gc)
 - [Contour binning: a new technique for spatially resolved X-ray spectroscopy applied to Cassiopeia A
 ](https://ui.adsabs.harvard.edu/abs/2006MNRAS.371..829S/abstract)
-- [Asad, MSc thesis](https://drive.google.com/file/d/1RyDp2HOEMch7D02P2CQ9kiDz8j-O6hpf/view)
+- [Study of the formation of Cold Fronts and Radio Mini-halos induced by the
+Intergalactic Gas Sloshing in the Cores of Galaxy Clusters](https://drive.google.com/file/d/1RyDp2HOEMch7D02P2CQ9kiDz8j-O6hpf/view)
 - [A Brief Intro to the Chandra Mission by Jonathan McDowell](https://cxc.harvard.edu/ciao/workshop/jan21/jcm.ws21.pdf)
 - [An X-ray Data Primer](https://cxc.harvard.edu/cdo/xray_primer.pdf)
 - [X-ray spectroscopy of galaxy clusters: studying astrophysical processes in the largest celestial laboratories](https://link.springer.com/article/10.1007/s00159-009-0023-3)

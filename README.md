@@ -335,17 +335,6 @@ python Processing_pre_fitting.py
 heainit
 ```
 
-- OPTIONAL STEP: In case of```bash: /headas-init.sh: No such file or directory``` error message run the following commands sequentially
-```
-source ~/.bashrc
-```
-```
-conda activate ciao-4.14
-```
-```
-heainit
-```
-
 - Run generated ```pre-fitting.sh```
 ```
 bash pre-fitting.sh

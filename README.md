@@ -362,7 +362,7 @@ bash pre-fitting.sh
 - May encounter ```specextract zero count error```. Ignore it for now.
 ![zerocount_error_specextract](images/zerocount_error_specextract_obs16129.png)
 
-***[OPTIONAL]Bug for users without sudo access***\
+***[OPTIONAL]Bug for users without sudo access***
 - If you see this ```specextract tmp file missing error``` run ```pre-fitting.sh``` in local machine with sudo access to avoid it. Fix is coming soon.
 ![specextract tmp folder error](images/Pre_fitting_tmp_folder_error.png)
 

@@ -362,7 +362,9 @@ bash pre-fitting.sh
 - May encounter ```specextract zero count error```. Ignore it for now.
 ![zerocount_error_specextract](images/zerocount_error_specextract_obs16129.png)
 
-will fix both in the next update.
+- May encounter ```specextract tmp file missing error```. Run ```pre-fitting.sh``` in local machine with sudo access to avoid it. 
+![specextract tmp folder error](images/Pre_fitting_tmp_folder_error.png)
+
 
 **Step 10: Processing_xspecfitting.py**
 - Run Processing_xspecfitting.py

@@ -64,7 +64,8 @@ if __name__ == "__main__":
 		clusterDirec = input("\nEnter the path where all the data files will be downloaded.\ne.g. /home/[user_name]/[data_dir]/[sub_data_dir]/...\ndata path: ")
 
 
-
+		sn_per_region =  70
+		reg_smoothness = 100
 		correct=False
 		while correct==False:
 			response = input("Confirm "+clusterDirec+" path? y or n: ")
@@ -74,7 +75,11 @@ if __name__ == "__main__":
 				clusterDirec = input("\nEnter the path where all the data files will be downloaded.\ne.g. /home/[user_name]/[data_dir]/[sub_data_dir]/...\ndata path: ")
 
 
-		f.write(clusterDirec)
+		f.write(clusterDirec+'\n')
+		sn_per_region = input("\nDefine signal to noise ratio per region\nSquare root of the total number of counts. So SN=70 is equal to around 4900 counts per region.\nEnter SN value: ")
+		f.write(sn_per_region+'\n')
+		reg_smoothness = input("\nDefine Signal to noise to smooth, e.g. smoothsn = 100.\nEnter smoothsn value: ")
+		f.write(reg_smoothness)
 		f.close()
 
 
@@ -83,10 +88,10 @@ if __name__ == "__main__":
 		content=[]
 		with open ('directory_list.txt', 'rt') as myfile:  
 		    for line in myfile:                   
-		        content.append(line)  
+		        content.append(line.strip())  
 		myfile.close()
-		cluster = content[0].strip()    ##'"07 17 31.20" "+37 45 35.4"'#
-		
+		cluster = content[0]   ##'"07 17 31.20" "+37 45 35.4"'#
+
 
 
 		parentdir = content[1]+'/'+cluster # + cluster + '/'
@@ -94,7 +99,7 @@ if __name__ == "__main__":
 		regionDirec = parentdir + '/regionfiles'
 		mapDirec = parentdir + '/maps'
 		os.makedirs(parentdir)
-		merged_path = os.path.join(parentdir, 'merged/contbin_sn70_smooth100/outreg/sex')
+		merged_path = os.path.join(parentdir, 'merged/contbin_sn' + str(sn_per_region) + '_smooth' + str(reg_smoothness)+'/outreg/sex')
 		os.makedirs(merged_path)
 		os.makedirs(specfile_outputdir)
 		os.makedirs(regionDirec)
@@ -112,11 +117,10 @@ if __name__ == "__main__":
 content=[]
 with open ('directory_list.txt', 'rt') as myfile:  
     for line in myfile:                   
-        content.append(line)  
+        content.append(line.strip())  
 myfile.close()
 cluster = content[0].strip()    ##'"07 17 31.20" "+37 45 35.4"'#
-MyDir = os.path.expanduser('~')
-parentdir = MyDir+'/'+content[1]+'/'+cluster # + cluster + '/'
+parentdir = content[1]+'/'+cluster # + cluster + '/'
 specfile_outputdir = parentdir + '/specfile_output'
 regionDirec = parentdir + '/regionfiles'
 mapDirec = parentdir + '/maps'
@@ -124,14 +128,6 @@ XSPEC = True #keep one True and one False, not both True, else issues parsing + 
 SPEX = False
 
 
-def create_path():
-	os.makedirs(parentdir)
-	merged_path = os.path.join(parentdir, 'merged/contbin_sn70_smooth100/outreg/sex')
-	os.makedirs(merged_path)
-	os.makedirs(specfile_outputdir)
-	os.makedirs(regionDirec)
-
-	print("\nCreated paths\n"+parentdir+"\n"+merged_path+"\n"+specfile_outputdir+"\n"+regionDirec)
 
 
 
@@ -152,7 +148,8 @@ simple_hardnessmap = False
 adaptivebin = False
 contourbin = True
 
-sn_per_region = 70; reg_smoothness = 100
+
+sn_per_region = content[2]; reg_smoothness = content[3]
 
 
 

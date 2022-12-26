@@ -37,7 +37,7 @@ print("Region: "+region+"\nminx: "+str(minx)+"\nminy: "+str(miny))
 file = open('preliminary_products.sh', 'w')
 file.write('cd ' + d.parentdir +'/merged\n')
 file.write("echo 'step 7. Contour Binning'\n")
-contbin = 'contbin --sn=' + str(5) + ' --smoothsn=' + str(15) + ' --constrainfill --constrainval=3. scaled_broad_flux_fov_sps.fits\nmkdir contbin_sn' + str(d.sn_per_region) + '_smooth' + str(d.reg_smoothness) + '\nmkdir contbin_sn' + str(d.sn_per_region) + '_smooth' + str(d.reg_smoothness) + '/outreg\nmv bin_signal_stats.qdp bin_sn_stats.qdp contbin_binmap.fits contbin_mask.fits contbin_out.fits contbin_sn.fits contbin_sn' + str(d.sn_per_region) + '_smooth' + str(d.reg_smoothness) + '\ncd contbin_sn' + str(d.sn_per_region) + '_smooth' + str(d.reg_smoothness) + '\n'
+contbin = 'contbin --sn=' + str(d.sn_per_region) + ' --smoothsn=' + str(d.reg_smoothness) + ' --constrainfill --constrainval=3. scaled_broad_flux_fov_sps.fits\nmkdir contbin_sn' + str(d.sn_per_region) + '_smooth' + str(d.reg_smoothness) + '\nmkdir contbin_sn' + str(d.sn_per_region) + '_smooth' + str(d.reg_smoothness) + '/outreg\nmv bin_signal_stats.qdp bin_sn_stats.qdp contbin_binmap.fits contbin_mask.fits contbin_out.fits contbin_sn.fits contbin_sn' + str(d.sn_per_region) + '_smooth' + str(d.reg_smoothness) + '\ncd contbin_sn' + str(d.sn_per_region) + '_smooth' + str(d.reg_smoothness) + '\n'
 mkregions = 'make_region_files --minx=' + str(minx) + ' --miny=' + str(miny) + ' --bin=1 --outdir=outreg contbin_binmap.fits\n'
 file.write(contbin)
 file.write(mkregions)

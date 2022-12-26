@@ -311,6 +311,14 @@ python RegCoordChange.py
 bash regcoordchange.sh
 ```
 
+- ***[OPTIONAL]For users without sudo access***\
+You may see following problem while converting region file coordinate system syntax in a remote server. Better to do it in a local system. Update is coming soon.
+
+![RegCoordChange_error](images/RegCoordChange_error.png)
+
+
+
+
 **Step 9: Pre fitting**\
 Running this will take a long time depending on the data. To run this in a remote server or another computer system follow the instruction ```FOR REMOTE MACHINE```. Future works includes adding CPU/GPU parallel processing.
 - ***[OPTIONAL]:FOR REMOTE MACHINE.***\

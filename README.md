@@ -94,7 +94,7 @@ During the [INSTALLATION](https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html) pr
 ***[OPTIONAL]For users without sudo access***\
 In the ```./configure``` part of the instructions replace the ```--prefix=/usr/local``` with ```--prefix=[home]/[usr_name]/local/bin```. Create ```mkdir -p [home]/[usr_name]/local/bin``` if it is not created before.
 
-In my case I used ```/home/zareef/anaconda3/bin```(automatically created during installation) as the location of ```[home]/[usr_name]/local/bin``` in the server user account. 
+In my case I used ```/home/zareef/anaconda3/bin```(automatically created with anaconda installation) as the location of ```[home]/[usr_name]/local/bin``` in the server user account. 
 
 **5. Download and install Contour binning and accumulative smoothing software.**
 

@@ -94,6 +94,8 @@ During the [INSTALLATION](https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html) pr
 ***[OPTIONAL]For users without sudo access***\
 In the ```./configure``` part of the instructions replace the ```--prefix=/usr/local``` with ```--prefix=[home]/[usr_name]/local/bin```. Create ```mkdir -p [home]/[usr_name]/local/bin``` if it is not created before.
 
+In my case I used ```/home/zareef/anaconda3/bin```(automatically created during installation) as the location of ```[home]/[usr_name]/local/bin``` in the server user account. 
+
 **5. Download and install Contour binning and accumulative smoothing software.**
 
 - Open terminal and run the following:
@@ -150,7 +152,22 @@ export CXXFLAGS=-I/usr/local/include -O2 -g -Wall -std=c++11
 export CXX=g++
 ...
 ```
+This is the part of the ```Makefile``` for my server account. I used my ```anaconda3``` folder location as the lib, include and bin path which was created after anaconda installtion:
 
+...
+```
+# add -lsocket to below for Solaris
+# add -Ldirname to add directory to link path to look for cfitsio
+linkflags=-L/home/zareef/anaconda3/lib -lcfitsio -Lparammm -lparammm -lpthread 
+
+# where to install (not very well tested)
+bindir=/home/zareef/anaconda3/bin
+
+# sensible compiler flags
+export CXXFLAGS=-I/home/zareef/anaconda3/include -O2 -g -Wall -std=c++11
+export CXX=g++
+...
+```
 
 - Build:
 ```

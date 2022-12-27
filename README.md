@@ -20,7 +20,7 @@ Masaryk University, Czech Republic
 ### Environment setup
 -----------------------
 
-Platform Support: Tested on Ubuntu 20.04.5 lts, Ubuntu 20.04.3 LTS server.
+Platform Support: Tested on Ubuntu 20.04.5 lts,  Ubuntu 20.04.4 LTS .
 
 
 **1. Install Anaconda distribution.**

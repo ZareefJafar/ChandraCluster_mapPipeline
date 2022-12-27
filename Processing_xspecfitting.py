@@ -3,8 +3,9 @@ import bin_region_directories as brd
 import directory as d
 import PreProcessing_download_data as pdd
 import subprocess
+import os
 
-
+code = os.getcwd()
 
 
 file2 = open('xspecfitting.sh', 'w')
@@ -25,6 +26,8 @@ for ii in list(range(brd.sexnum)):#len(obsids)
 #        file3.write('EOF\n\n')
     file3.close()
     file2.write('xspec - reg_' + str(ii) + '_xspec_fit.script\n')
+file2.write('echo Now go to your code directory:\n')################WARNING############################
+file2.write('echo '+code)
 file2.close()
 
 #file.write('cp spexfitting.sh ' + specfile_outputdir + '/\n')

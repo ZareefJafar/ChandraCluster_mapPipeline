@@ -21,7 +21,7 @@ Masaryk University, Czech Republic
 -----------------------
 
 Platform Support: Tested on Ubuntu 20.04.5 lts,  Ubuntu 20.04.4 LTS .
-
+System requirements: any multicore cpu, minimum 8 GB RAM, 70 GB storage for software packages. 
 
 **1. Install Anaconda distribution.**
 

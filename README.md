@@ -178,7 +178,8 @@ make
 make install 
 ```
 
-To learn more about [contbin](https://github.com/jeremysanders/contbin)
+To learn more about [contbin](https://github.com/jeremysanders/contbin)\
+
 
 The tools in step 6 and 7 are not implemented yet in this pipeline. They may be added as an option in future updates.\
 **6. OPTIONAL: Installing GNU parallel shell tool.(Not used)**
@@ -437,5 +438,5 @@ Intergalactic Gas Sloshing in the Cores of Galaxy Clusters](https://drive.google
 - [Occurrence of Radio Minihalos in a Mass-limited Sample of Galaxy Clusters](https://iopscience.iop.org/article/10.3847/1538-4357/aa7069/meta)
 - [Expanding the Sample of Radio Minihalos in Galaxy Clusters](https://iopscience.iop.org/article/10.3847/1538-4357/ab29f1/meta)
 - [Diffuse Radio Emission from Galaxy Clusters](https://link.springer.com/article/10.1007/s11214-019-0584-z)
-
+- [Different binning approaches](https://cxc.cfa.harvard.edu/ciao/gallery/binning.html)
 

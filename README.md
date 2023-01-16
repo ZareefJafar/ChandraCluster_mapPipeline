@@ -239,7 +239,9 @@ bash preprocessing.sh
 
 Bug List and solution:\
 [pget_error](https://cxc.cfa.harvard.edu/ciao/faq/pget_error.html)\
-[cannot import name 'object' from 'numpy'](https://cxc.cfa.harvard.edu/ciao/watchout.html)
+solution: go to the link\
+[cannot import name 'object' from 'numpy': Problems with NumPy 1.24](https://cxc.cfa.harvard.edu/ciao/watchout.html)\
+solution: enter ciao environment and run ```conda install -c anaconda numpy=1.23.5```
 
 **Step 3: Run PreProcessing_flare_filter.py**
 

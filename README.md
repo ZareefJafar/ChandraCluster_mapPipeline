@@ -295,6 +295,7 @@ bash preprocessing.sh
 ```
 
 **Step 7: Run Preliminary_Products_contourbin.py**
+For server without sudo access go to the base environment: ```conda deactivate``` and run the following commands. For users with sudo access just run the following.\
 ```
 python Preliminary_Products_contourbin.py
 ```

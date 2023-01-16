@@ -303,7 +303,7 @@ python Preliminary_Products_contourbin.py
 ```
 bash preliminary_products.sh
 ```
-Go to ciao environment ```conda activate ciao-4.15`` and continue from step 8.
+Go to ciao environment ```conda activate ciao-4.15``` and continue from step 8.
 
 
 **Step 8: Converting region file coordinate system syntax**

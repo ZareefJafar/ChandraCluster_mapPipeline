@@ -124,12 +124,8 @@ sudo make install
 git clone https://github.com/jeremysanders/contbin
 ```
 
-- Create a ```local/bin``` directory in home directory (Do not do this if you already have one in the current user):
-```
-mkdir -p [home]/[usr_name]/local/bin
-```
-
 - Go to the ```contbin``` folder
+
 - Open Makefile
 ```
 nano Makefile

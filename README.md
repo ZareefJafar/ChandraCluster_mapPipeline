@@ -176,7 +176,7 @@ make
 make install 
 ```
 
-To learn more about [contbin](https://github.com/jeremysanders/contbin)\
+To learn more about [contbin](https://github.com/jeremysanders/contbin)
 
 
 The tools in step 6 and 7 are not implemented yet in this pipeline. They may be added as an option in future updates.\

@@ -341,6 +341,9 @@ make ```tmp``` folder
 ```
 mkdir tmp
 ```
+```
+chmod 777 tmp
+```
 set the ASCDS_WORK_PATH environment variable. See [Bugs: wavdetect](https://cxc.harvard.edu/ciao/bugs/wavdetect.html#parallel) on the CIAO website for details information.
 ```
 export ASCDS_WORK_PATH=$PWD/tmp

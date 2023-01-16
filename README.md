@@ -295,13 +295,16 @@ bash preprocessing.sh
 ```
 
 **Step 7: Run Preliminary_Products_contourbin.py**
-For server without sudo access go to the base environment: ```conda deactivate``` and run the following commands. For users with sudo access just run the following.\
+
+For system without sudo access go to the base environment: ```conda deactivate``` before running the following commands. 
 ```
 python Preliminary_Products_contourbin.py
 ```
 ```
 bash preliminary_products.sh
 ```
+Go to ciao environment ```conda activate ciao-4.15`` and continue from step 8.
+
 
 **Step 8: Converting region file coordinate system syntax**
 

@@ -48,11 +48,8 @@ conda create -n ciao-4.15 -c https://cxc.cfa.harvard.edu/conda/ciao -c conda-for
 
 - Select all in STEP 2 and click submit.
 
-- unzip or extract the .tar.gz file ```(using e.g. "tar zxf [tar file]")``` and follow the [INSTALLATION](https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html) process to install HEASOFT.
+- unzip or extract the .tar.gz file ```(using e.g. "tar zxf [tar file]")``` and follow the [INSTALLATION](https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html) process to install HEASOFT. For user without sudo access see the [OPTIONAL] steps at the end. 
 
-***[OPTIONAL]For users without sudo access***
-
-During the [INSTALLATION](https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html) process check gcc, g++, gfortran, perl, python3 by running ```which gcc```, ```which python3``` etc in the terminal. Use these locations in the ```export``` of ```Building the software``` step.
 
 - To make HEASOFT initialization easy I have created the following alias:
 
@@ -85,8 +82,9 @@ During the [INSTALLATION](https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html) pr
   Type ```heainit``` to initiate HEASOFT whenever needed.
 
 
+***[OPTIONAL]For users without sudo access***
 
-
+During the [INSTALLATION](https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html) process check gcc, g++, gfortran, perl, python3 by running ```which gcc```, ```which python3``` etc in the terminal. Use these locations in the ```export``` of ```Building the software``` step.
 
 
 **4. Install CFITSIO**

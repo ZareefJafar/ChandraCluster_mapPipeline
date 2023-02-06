@@ -442,6 +442,7 @@ Some resources which helped me to work with this pipeline and also my ongoing wo
 - [Galaxy Clusters, ARGI](http://abekta.iub.edu.bd/rs/gc)
 - [Contour binning: a new technique for spatially resolved X-ray spectroscopy applied to Cassiopeia A
 ](https://ui.adsabs.harvard.edu/abs/2006MNRAS.371..829S/abstract)
+- [The Galaxy Cluster 'Pypeline' for X-ray Temperature Maps: ClusterPyXT](https://github.com/bcalden/ClusterPyXT), [arXiv](https://arxiv.org/abs/1903.08215)
 - [Study of the formation of Cold Fronts and Radio Mini-halos induced by the
 Intergalactic Gas Sloshing in the Cores of Galaxy Clusters](https://drive.google.com/file/d/1RyDp2HOEMch7D02P2CQ9kiDz8j-O6hpf/view)
 - [The Mergers in Abell 2256: Displaced Gas and its Connection to the Radio-emitting Plasma](https://arxiv.org/abs/2005.10263)

@@ -10,11 +10,11 @@ This pipeline is based on a [pipeline](https://github.com/jpbreuer/Chandra_pipel
 Special thanks to,
 
 [Dr. Khan M B Asad](http://phy.iub.edu.bd/people/asad/)\
-Assistant Professor
-Independent University, Bangladesh
+Assistant Professor\
+Independent University, Bangladesh (IUB), Dhaka, Bangladesh. 
 
 [Jean-Paul Breuer](http://jpbreuer.com/index.html)\
-Masaryk University, Czech Republic
+Masaryk University, Brno, Czech Republic
 
 -----------------------
 ### Environment setup

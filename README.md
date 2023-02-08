@@ -5,7 +5,7 @@
 Pipeline to create x-ray temeprature maps, pressure maps, surface brightness maps, and density maps of  galaxy clusters from [Chandra Data Archive.](https://cda.harvard.edu/chaser/)
 
 
-This pipeline is based on a [pipeline](https://github.com/jpbreuer/Chandra_pipeline) created by [Jean-Paul Breuer](http://jpbreuer.com/index.html)
+This pipeline is based on a [pipeline](https://github.com/jpbreuer/Chandra_pipeline) created by Jean-Paul Breuer
 
 Special thanks to,
 
@@ -13,7 +13,7 @@ Special thanks to,
 Assistant Professor
 Independent University, Bangladesh
 
-Jean-Paul Breuer\
+[Jean-Paul Breuer](http://jpbreuer.com/index.html)\
 Masaryk University, Czech Republic
 
 -----------------------

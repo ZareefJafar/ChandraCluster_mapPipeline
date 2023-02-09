@@ -297,7 +297,6 @@ python PreProcessing_source_crop.py
 bash preprocessing.sh
 ```
 - ***[OPTIONAL]For remote system without any graphical interface***\
-
 Copy the ```~/[data_dir]/[cluster_name]/merged/broad_thresh.img``` file to your local machine. Follow above steps for creating the 3 region files. Finally copy the region file to ```~/[data_dir]/[cluster_name]/regionfiles``` directory of the remote machine and countinue with the pipeline in the remote machine.
 
 

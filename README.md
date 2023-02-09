@@ -339,7 +339,7 @@ python RegCoordChange.py
 ```
 ```
 bash regcoordchange.sh
-
+```
 After this copy the ```~/[data_dir]/[cluster_name]/merged/contbin_sn25_smooth100/outreg/sex/``` folder to the remote server location.
 
 

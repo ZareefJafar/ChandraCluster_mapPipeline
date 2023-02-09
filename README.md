@@ -345,8 +345,8 @@ After this copy the ```~/[data_dir]/[cluster_name]/merged/contbin_sn25_smooth100
 
 **Step 9: Pre fitting**\
 Running this will take a long time depending on the data. To run this in a remote server or another computer system follow the instruction ```FOR REMOTE MACHINE```. Future works includes adding CPU/GPU parallel processing and resume option.
-- ***[OPTIONAL]:FOR REMOTE MACHINE.***\
-Transfer the data file and script file to the remote server. Make sure the remote server has ciao and heasoft installed. Then run ```change_machine.py```.
+- ***[OPTIONAL]:To run only the Step 9 in a remote server***\
+Transfer all the data file and script file to the remote server. Make sure the remote server has ciao and heasoft installed. Then run ```change_machine.py```.
 ```
 python change_machine.py
 ```
@@ -395,9 +395,10 @@ bash pre-fitting.sh
 - May encounter ```specextract zero count error```. Ignore it for now.
 ![zerocount_error_specextract](images/zerocount_error_specextract_obs16129.png)
 
-***[OPTIONAL]Bug for users without sudo access***
+
+<!--***[OPTIONAL]Bug for users without sudo access***
 - If you see this ```specextract tmp file missing error``` run ```pre-fitting.sh``` in local machine with sudo access to avoid it. Fix is coming soon.
-![specextract tmp folder error](images/Pre_fitting_tmp_folder_error.png)
+![specextract tmp folder error](images/Pre_fitting_tmp_folder_error.png)-->
 
 
 **Step 10: Processing_xspecfitting.py**

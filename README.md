@@ -268,6 +268,8 @@ python PreProcessing_merge_data_flux.py
 
 **Step 6: Removing point source from merged image**
 
+This step requires the DS9 application, which is a graphical interface. In case you are running the pipeline in a remote server, after finishing the steps in your local machine copy the region files in ```~/[data_dir]/[cluster_name]/regionfiles``` directory of the server. 
+
 - Open ```broad_thresh.img``` with ds9. This file should be located inside ```merged``` folder inside cluster data folder.
 
 ```

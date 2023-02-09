@@ -268,7 +268,7 @@ python PreProcessing_merge_data_flux.py
 
 **Step 6: Removing point source from merged image** 
 
-This step requires the DS9 application, which is a graphical interface. In case you are running the pipeline in a remote server refer to the [OPTIONAL] part. 
+This step requires the DS9 application, which is a graphical interface. In case you are running the pipeline in a remote server without any graphical interface refer to the [OPTIONAL] part. 
 
 - Open ```broad_thresh.img``` with ds9. This file should be located inside ```merged``` folder inside cluster data folder.
 
@@ -315,7 +315,7 @@ Go to ciao environment ```conda activate ciao-4.15``` and continue from step 8.
 
 **Step 8: Converting region file coordinate system syntax**
 
-This step requires the DS9 application, which is a graphical interface. In case you are running the pipeline in a remote server refer to the [OPTIONAL] part. 
+This step requires the DS9 application, which is a graphical interface. In case you are running the pipeline in a remote server without any graphical interface refer to the [OPTIONAL] part. 
 
 - Convert region file coordinate system syntax
 ```
@@ -325,7 +325,7 @@ python RegCoordChange.py
 bash regcoordchange.sh
 ```
 
-- ***[OPTIONAL]For remote system without any graphical interface***\
+- ***[OPTIONAL]For remote system without any graphical interface***
 
 You may see following problem while converting region file coordinate system syntax in a remote server. 
 

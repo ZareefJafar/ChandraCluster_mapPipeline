@@ -266,9 +266,9 @@ bash preprocessing.sh
 python PreProcessing_merge_data_flux.py
 ```
 
-**Step 6: Removing point source from merged image**
+**Step 6: Removing point source from merged image** 
 
-This step requires the DS9 application, which is a graphical interface. In case you are running the pipeline in a remote server, after finishing the steps in your local machine copy the region files in ```~/[data_dir]/[cluster_name]/regionfiles``` directory of the server. 
+This step requires the DS9 application, which is a graphical interface. In case you are running the pipeline in a remote server refer to the [OPTIONAL] part. 
 
 - Open ```broad_thresh.img``` with ds9. This file should be located inside ```merged``` folder inside cluster data folder.
 
@@ -296,6 +296,10 @@ python PreProcessing_source_crop.py
 ```
 bash preprocessing.sh
 ```
+- ***[OPTIONAL]For remote system without any graphical interface***\
+
+Copy the ```~/[data_dir]/[cluster_name]/merged/broad_thresh.img``` file to your local machine. Follow above steps for creating the 3 region files. Finally copy the region file to ```~/[data_dir]/[cluster_name]/regionfiles``` directory of the remote machine and countinue with the pipeline in the remote machine.
+
 
 **Step 7: Run Preliminary_Products_contourbin.py**
 
@@ -311,6 +315,8 @@ Go to ciao environment ```conda activate ciao-4.15``` and continue from step 8.
 
 **Step 8: Converting region file coordinate system syntax**
 
+This step requires the DS9 application, which is a graphical interface. In case you are running the pipeline in a remote server refer to the [OPTIONAL] part. 
+
 - Convert region file coordinate system syntax
 ```
 python RegCoordChange.py
@@ -319,16 +325,26 @@ python RegCoordChange.py
 bash regcoordchange.sh
 ```
 
-- ***[OPTIONAL]For users without sudo access***\
-You may see following problem while converting region file coordinate system syntax in a remote server. Better to do it in a local system. Update is coming soon.
+- ***[OPTIONAL]For remote system without any graphical interface***\
+
+You may see following problem while converting region file coordinate system syntax in a remote server. 
 
 ![RegCoordChange_error](images/RegCoordChange_error.png)
 
+To avoid this first copy the ```~/[data_dir]/[cluster_name]/merged/contbin_sn25_smooth100/outreg``` folder and ```~/[data_dir]/[cluster_name]/merged/scaled_broad_flux_fov_sps.fits``` to your local system. Then run the following
 
+- Convert region file coordinate system syntax
+```
+python RegCoordChange.py
+```
+```
+bash regcoordchange.sh
+
+After this copy the ```~/[data_dir]/[cluster_name]/merged/contbin_sn25_smooth100/outreg/sex/``` folder to the remote server location.
 
 
 **Step 9: Pre fitting**\
-Running this will take a long time depending on the data. To run this in a remote server or another computer system follow the instruction ```FOR REMOTE MACHINE```. Future works includes adding CPU/GPU parallel processing.
+Running this will take a long time depending on the data. To run this in a remote server or another computer system follow the instruction ```FOR REMOTE MACHINE```. Future works includes adding CPU/GPU parallel processing and resume option.
 - ***[OPTIONAL]:FOR REMOTE MACHINE.***\
 Transfer the data file and script file to the remote server. Make sure the remote server has ciao and heasoft installed. Then run ```change_machine.py```.
 ```

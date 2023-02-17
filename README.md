@@ -25,8 +25,8 @@ Max Planck Institute for Extraterrestrial Physics, Germany
 
 
 System requirements:\
-Platform Support: Tested on Ubuntu 20.04.5 lts,  Ubuntu 20.04.4 LTS.\
-Any multicore CPU, minimum 8 GB RAM, 70 GB storage for software packages. 
+Platform Support: Tested on Ubuntu 20.04.5 LTS and Ubuntu 20.04.4 LTS.\
+Any multicore CPU, minimum 8 GB RAM, 50 GB storage for software packages.
 
 **1. Install Anaconda distribution.**
 

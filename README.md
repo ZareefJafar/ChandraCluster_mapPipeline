@@ -16,6 +16,9 @@ Independent University, Bangladesh (IUB), Dhaka, Bangladesh.
 [Jean-Paul Breuer](http://jpbreuer.com/index.html)\
 Masaryk University, Brno, Czech Republic
 
+[Dr Jeremy Sanders](https://www.mpe.mpg.de/~jsanders/)\
+Max Planck Institute for Extraterrestrial Physics, Germany
+
 -----------------------
 ### Environment setup
 -----------------------

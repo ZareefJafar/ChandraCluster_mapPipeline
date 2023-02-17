@@ -179,7 +179,7 @@ make install
 
 To learn more about [contbin](https://github.com/jeremysanders/contbin)
 
-**6. OPTIONAL: X Windows Virtual Frame Buffer(Xvfb) for Headless Linux Server **
+**6. OPTIONAL: X Windows Virtual Frame Buffer(Xvfb) for Headless Linux Server**
 
 [Xvfb](https://www.x.org/releases/X11R7.6/doc/man/man1/Xvfb.1.xhtml) is an X server that can run on machines with no display hardware and no physical input devices.\
 install:

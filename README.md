@@ -184,7 +184,8 @@ To learn more about [contbin](https://github.com/jeremysanders/contbin)
 
 **6. OPTIONAL: X Windows Virtual Frame Buffer(Xvfb) for Headless Linux Server**
 
-[Xvfb](https://www.x.org/releases/X11R7.6/doc/man/man1/Xvfb.1.xhtml) is an X server that can run on machines with no display hardware and no physical input devices.\
+[Xvfb](https://www.x.org/releases/X11R7.6/doc/man/man1/Xvfb.1.xhtml) allows you to run graphics applications without the need to use a display.
+Useful to run any application that requires GUI but have to run it in a remote server where there is no display hardware and no physical input devices. Like our processing in step 7 where the pipeline automatically opens DS9 to process the region files.\
 install:
 ```
 sudo apt install xvfb 

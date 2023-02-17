@@ -186,9 +186,8 @@ install:
 ```
 sudo apt install xvfb 
 ```
+The tools in step 7 and 8 are not implemented yet in this pipeline. They may be added as an option in future updates.
 
-
-The tools in step 7 and 8 are not implemented yet in this pipeline. They may be added as an option in future updates.\
 **7. OPTIONAL: Installing GNU parallel shell tool.(Not used)**
 
 Run the following:

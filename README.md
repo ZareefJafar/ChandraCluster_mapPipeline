@@ -179,9 +179,16 @@ make install
 
 To learn more about [contbin](https://github.com/jeremysanders/contbin)
 
+**6. OPTIONAL: X Windows Virtual Frame Buffer(Xvfb) for Headless Linux Server **
+[Xvfb](https://www.x.org/releases/X11R7.6/doc/man/man1/Xvfb.1.xhtml) is an X server that can run on machines with no display hardware and no physical input devices.\
+install:
+```
+sudo apt install xvfb 
+```
 
-The tools in step 6 and 7 are not implemented yet in this pipeline. They may be added as an option in future updates.\
-**6. OPTIONAL: Installing GNU parallel shell tool.(Not used)**
+
+The tools in step 7 and 8 are not implemented yet in this pipeline. They may be added as an option in future updates.\
+**7. OPTIONAL: Installing GNU parallel shell tool.(Not used)**
 
 Run the following:
 ```
@@ -197,7 +204,7 @@ Reference:
 
 
 
-**7. OPTIONAL: Install SPEX software package.(Not used)**
+**8. OPTIONAL: Install SPEX software package.(Not used)**
 
 Follow the SPEX installation guide from [here](https://spex-xray.github.io/spex-help/getstarted/install.html).
 
@@ -314,9 +321,9 @@ Go to ciao environment ```conda activate ciao-4.15``` and continue from step 8.
 
 **Step 8: Converting region file coordinate system syntax**
 
-This step requires the DS9 application, which is a graphical interface. In case you are running the pipeline in a remote server without any graphical interface refer to the [OPTIONAL] part. 
 
-- Convert region file coordinate system syntax
+- Convert region file coordinate system syntax\
+input: enter 'n' if you are running the pipeline on a machine with no access to the graphical interface of the operating system. 'y' otherwise. 
 ```
 python RegCoordChange.py
 ```
@@ -324,22 +331,6 @@ python RegCoordChange.py
 bash regcoordchange.sh
 ```
 
-- ***[OPTIONAL]For remote system without any graphical interface***
-
-You may see following problem while converting region file coordinate system syntax in a remote server. 
-
-![RegCoordChange_error](images/RegCoordChange_error.png)
-
-To avoid this first copy the ```~/[data_dir]/[cluster_name]/merged/contbin_sn25_smooth100/outreg``` folder and ```~/[data_dir]/[cluster_name]/merged/scaled_broad_flux_fov_sps.fits``` to your local system. Then run the following
-
-- Convert region file coordinate system syntax
-```
-python RegCoordChange.py
-```
-```
-bash regcoordchange.sh
-```
-After this copy the ```~/[data_dir]/[cluster_name]/merged/contbin_sn25_smooth100/outreg/sex/``` folder to the remote server location.
 
 
 **Step 9: Pre fitting**\

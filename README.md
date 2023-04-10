@@ -36,7 +36,7 @@ Follow the [Anaconda Installation page](https://docs.anaconda.com/anaconda/insta
 
 - Run the following command in the terminal to install ciao, caldb and some associated software in a conda environment named “ciao-4.14” or anything you like.
 ```
-conda create -n ciao-4.15 -c https://cxc.cfa.harvard.edu/conda/ciao -c conda-forge ciao sherpa ds9 ciao-contrib caldb marx jupyter jupyterlab numpy matplotlib astropy scipy scikit-learn pandas seaborn
+conda create -n ciao-4.15 -c https://cxc.cfa.harvard.edu/conda/ciao -c conda-forge ciao sherpa ds9 ciao-contrib caldb marx python=3.10 jupyter jupyterlab numpy matplotlib astropy scipy scikit-learn pandas seaborn
 ```
 - CALDB, acis_bkgrnd and hrc_bkgrnd file download might fail because of  ```CondaHTTPError: HTTP 000 CONNECTION FAILED for url``` error or slow internet connection. If this happens remove caldb from CIAO installation command and follow the [Alternative download instructions](https://cxc.cfa.harvard.edu/ciao/threads/ciao_install_conda/index.html#alt_download). There are multiple approches under ```CALDB alternatives```. Recommended and tested alternative: ```Install individual conda tar files``` .
 

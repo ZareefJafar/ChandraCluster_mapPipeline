@@ -50,7 +50,7 @@ conda create -n ciao-4.15 -c https://cxc.cfa.harvard.edu/conda/ciao -c conda-for
 
 - Select "Source Code" and select "PC - Linux - Ubuntu" from checkbox in STEP 1.
 
-- Select all in STEP 2 and click submit.
+- Select all in STEP 2 and click submit. Alternative (drive download): [heasoft-6.31.1src.tar.gz](https://drive.google.com/file/d/1BlUcFcbjQW6MFb1p9eESeg_HfmCVBXTG/view?usp=share_link)
 
 - unzip or extract the .tar.gz file ```(using e.g. "tar zxf [tar file]")``` and follow the [INSTALLATION](https://heasarc.gsfc.nasa.gov/lheasoft/ubuntu.html) process to install HEASOFT. For user without sudo access see the [OPTIONAL] steps at the end. 
 
